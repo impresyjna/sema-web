@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Sema! - Flirt towarzyski</title>
+
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="css/style.css">
+
+
+
+
+</head>
+
+<body>
+
+<div class="login-form">
+  <%= form_for(:session, url: login_path) do |f| %>
+  <h1>Sema!</h1>
+  <div class="form-group ">
+    <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
+    <i class="fa fa-user"></i>
+  </div>
+  <div class="form-group log-status">
+    <%= f.password_field :password, class: 'form-control', placeholder: 'Hasło' %>
+    <i class="fa fa-lock"></i>
+  </div>
+  <span class="alert">Niepoprawne dane.</span>
+      <%= f.submit "Zaloguj", class: "log-btn" %>
+  <% end %>
+</div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<script>
+  $(document).ready(function(){
+    $('.log-btn').click(function(){
+      $('.log-status').addClass('wrong-entry');
+      $('.alert').fadeIn(500);
+      setTimeout( "$('.alert').fadeOut(1500);",3000 );
+    });
+    $('.form-control').keypress(function(){
+      $('.log-status').removeClass('wrong-entry');
+    });
+
+  });
+</script>
+
+
+
+
+</body>
+</html>
