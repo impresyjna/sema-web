@@ -10,7 +10,7 @@ Rails.application.routes.draw do
 
       #sessions
       delete '/sessions/logout', to: 'sessions#destroy'
-      post '/sessions/login', to: 'session#create'
+      post '/sessions/login', to: 'sessions#create'
 
 
       devise_for :users
@@ -21,6 +21,7 @@ Rails.application.routes.draw do
 
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
+  get 'dashboard' => 'dashboard#index'
 
   resources :users
 

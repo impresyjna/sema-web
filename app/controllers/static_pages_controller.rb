@@ -1,4 +1,4 @@
-class StaticPagesController < ApplicationController
+class StaticPagesController < FrontController
   layout false
 
   def home
