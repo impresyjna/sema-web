@@ -9,8 +9,6 @@
   <link rel="stylesheet" href="css/style.css">
 
 
-
-
 </head>
 
 <body>
@@ -21,7 +19,7 @@
       <%= render 'shared/error_messages', object: f.object %>
   <h1>Sema!</h1>
   <div class="form-group ">
-    <%= f.email_field :email, class: 'form-control', placeholder: 'Email' %>
+    <%= f.text_field :login, class: 'form-control', placeholder: 'Login' %>
     <i class="fa fa-user"></i>
   </div>
   <div class="form-group">

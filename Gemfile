@@ -24,6 +24,7 @@ gem 'compass-rails'
 #Api gems
 gem 'active_model_serializers'
 gem 'rack-cors', :require => 'rack/cors'
+gem "font-awesome-rails"
 
 group :development, :test do
   gem 'byebug'
