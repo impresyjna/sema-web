@@ -1,7 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
-@import url(http://fonts.googleapis.com/css?family=Vibur);
+@import url(http://fonts.googleapis.com/css?family=Caveat);
 
 
 /*=============================================================
@@ -18,7 +18,7 @@
     GENERAL  STYLES
     =============================================*/
 body {
-  font-family: 'Vibur', cursive;
+  font-family: 'Caveat', cursive;
   line-height:30px;
   background:#FF9000;
 }
@@ -60,7 +60,11 @@ body {
 .sidebar-collapse > .nav > li > a {
   padding:15px 10px;
   color: #333333;
-  font-weight: 900;
+  font-size: 26px;
+}
+
+.panel-eyecandy-title {
+  color: #333333;
   font-size: 20px;
 }
 .sidebar-collapse > .nav > li {
@@ -123,6 +127,22 @@ body {
 .div-square> a,.div-square> a:hover {
   color:#808080;
   text-decoration:none;
+}
+
+.blue {
+  background-color: rgb(113, 159, 241);
+}
+
+.green {
+  background-color: rgb(144, 236, 192);
+}
+
+.red {
+  background-color: rgb(255, 102, 133);
+}
+
+.yellow {
+  background-color: rgb(237, 253, 46);
 }
 /*==============================================
     MEDIA QUERIES
