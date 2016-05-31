@@ -1,0 +1,11 @@
+<%= form_for @category do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
+
+
+
+    <%= f.text_field :name, class: 'form-control', :required => true, :placeholder => "Nazwa" %>
+
+    <%= f.submit "Zapisz", :class => "btn btn-danger btn-lg btn-block" %>
+
+<% end %>
+

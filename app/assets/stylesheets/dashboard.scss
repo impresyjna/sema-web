@@ -68,12 +68,12 @@ body {
   font-size: 20px;
 }
 .sidebar-collapse > .nav > li {
-  border-bottom:1px solid #10CE88;
+  border-bottom:1px solid #fff;
 }
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
 
-  background:#ff7b00;
+  background:#ff6600;
   outline:0;
 }
 
@@ -165,6 +165,46 @@ body {
   }
 
 
+}
+
+.table_buttons {
+  float: right;
+}
+
+td {
+  text-align: center;
+}
+
+th {
+  text-align: center;
+}
+
+tr {
+  color: #333333;
+  font-size: 20px;
+}
+
+.panel-primary {
+  border-color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.btn-danger {
+  background-color: #ff5000;
+  border: 0px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.btn-danger:hover {
+  background-color: #ff6600;
+}
+
+.form-control {
+  font-size: 20px;
 }
 
 
