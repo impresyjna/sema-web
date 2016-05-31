@@ -5,30 +5,30 @@
 
 
       <li class="active-link">
-        <a href="index.html" ><i class="fa fa-desktop "></i>Dashboard</a>
+        <%= link_to dashboard_path do%><i class="fa fa-tachometer"></i>Dashboard<% end %>
       </li>
 
 
       <li>
-        <a href="ui.html"><i class="fa fa-table "></i>Lista pytań</a>
+        <%= link_to questions_path do%><i class="fa fa-question-circle"></i>Lista pytań<% end %>
       </li>
       <li>
-        <a href="blank.html"><i class="fa fa-edit "></i>Dodaj pytanie</a>
-      </li>
-
-
-      <li>
-        <%= link_to categories_path do%><i class="fa fa-spoon"></i>Lista kategroii pytań<% end %>
-      </li>
-      <li>
-        <%= link_to new_category_path do%><i class="fa fa-spoon"></i>Dodaj kategorię<% end %>
+        <%= link_to new_question_path do%><i class="fa fa-question-circle-o"></i>Dodaj pytanie<% end %>
       </li>
 
+
       <li>
-        <a href="#"><i class="fa fa-edit "></i>Lista kart</a>
+        <%= link_to categories_path do%><i class="fa fa-list-alt"></i>Lista kategorii pytań<% end %>
       </li>
       <li>
-        <a href="#"><i class="fa fa-table "></i>Dodaj kartę</a>
+        <%= link_to new_category_path do%><i class="fa fa-plus"></i>Dodaj kategorię<% end %>
+      </li>
+
+      <li>
+        <%= link_to cards_path do%><i class="fa fa-comments"></i>Lista kart<% end %>
+      </li>
+      <li>
+        <%= link_to new_card_path do%><i class="fa fa-comment"></i>Dodaj kartę<% end %>
       </li>
 
     </ul>
