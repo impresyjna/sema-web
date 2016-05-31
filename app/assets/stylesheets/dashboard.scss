@@ -130,20 +130,30 @@ body {
 }
 
 .blue {
-  background-color: rgb(113, 159, 241);
+  background-color: #3498db;
 }
 
 .green {
-  background-color: rgb(144, 236, 192);
+  background-color: #2ecc71;
 }
 
 .red {
-  background-color: rgb(255, 102, 133);
+  background-color: #e74c3c;
 }
 
 .yellow {
-  background-color: rgb(237, 253, 46);
+  background-color: #f1c40f;
 }
+
+.amethyst {
+  background-color: #9b59b6;
+}
+
+.concrete {
+  background-color: #95a5a6;
+}
+
+
 /*==============================================
     MEDIA QUERIES
     =============================================*/
