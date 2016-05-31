@@ -11,7 +11,7 @@
   <td class="table_buttons">
     <%= link_to "<i class='fa fa-pencil fa-2x'></i>".html_safe, edit_question_path(question) %>
     <% if question.confirmed %>
-        <%= link_to "<i class='fa fa-trash fa-2x'></i>".html_safe, question, method: :delete %>
+        <%= link_to "<i class='fa fa-ban fa-2x'></i>".html_safe, question, method: :delete %>
     <% else %>
         <%= link_to "<i class='fa fa-check fa-2x'></i>".html_safe, question, method: :delete %>
     <% end %>
