@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import url(http://fonts.googleapis.com/css?family=Vibur);
 
 
 /*=============================================================
@@ -17,8 +18,13 @@
     GENERAL  STYLES
     =============================================*/
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Vibur', cursive;
   line-height:30px;
+  background:#FF9000;
+}
+
+.navbar-default {
+  background:#FF9000;
 }
 
 #wrapper {
@@ -29,15 +35,15 @@ body {
 #page-wrapper {
   padding: 15px 15px;
   min-height: 600px;
-  background:#F3F3F3;
+  background: #ff5000;
 
 }
 #page-inner {
   width:100%;
   margin:10px 20px 10px 0px;
-  background-color:#fff!important;
   padding:10px;
   min-height:1050px;
+  background:#FF9000;
 }
 .pad-top {
   padding-top:15px;
@@ -53,31 +59,35 @@ body {
 
 .sidebar-collapse > .nav > li > a {
   padding:15px 10px;
-  color: #214761;
+  color: #333333;
   font-weight: 900;
-  font-size: 16px;
+  font-size: 20px;
 }
 .sidebar-collapse > .nav > li {
-  border-bottom:1px solid #e1e1e1;
+  border-bottom:1px solid #10CE88;
 }
 .sidebar-collapse .nav > li > a:hover,
 .sidebar-collapse .nav > li > a:focus {
 
-  background:#F3F3F3;
+  background:#ff7b00;
   outline:0;
 }
 
 .navbar-side {
   border:none;
-  background-color: #fff;
 
 }
 .navbar-inverse {
 
-  background-color: #214761;
+  background-color: #ff5000;
   border-color: #F0F0F0;
   min-height: 80px;
 }
+
+.fa-sign-out {
+  color: #333333;
+}
+
 
 
 .nav > li > a > i {
@@ -85,7 +95,6 @@ body {
 }
 .logout-spn {
   float:right;
-  color:#fff;
   font-size:25px;
   font-weight:800;
   margin:20px;
@@ -95,7 +104,7 @@ body {
   text-decoration:none;
 }
 .active-link {
-  background-color:#f3f3f3;
+  background-color:#ff5000;
 }
 
 /*==============================================
@@ -115,23 +124,6 @@ body {
   color:#808080;
   text-decoration:none;
 }
-/*==============================================
-    FOOTER STYLES
-    =============================================*/
-.footer {
-  background-color:#214761;
-  width:100%;
-  color:#fff;
-  padding:20px 50px 20px 50px;
-  padding-left:20px;
-}
-
-
-.footer > a, .footer>a:hover {
-
-  color:#fff;
-}
-
 /*==============================================
     MEDIA QUERIES
     =============================================*/

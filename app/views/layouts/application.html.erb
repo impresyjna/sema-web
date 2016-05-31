@@ -1,14 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>SemaApi</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sema Admin</title>
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css'>
+  <%= stylesheet_link_tag 'dashboard', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'/>
 </head>
 <body>
+<div id="wrapper">
+  <%= render "layouts/top_nav" %>
+  <%= render "layouts/side_nav" %>
+  <div id="page-wrapper">
+    <div id="page-inner">
+      <%= yield %>
+    </div>
+    <!-- /. PAGE INNER  -->
+  </div>
+</div>
 
-<%= yield %>
+
+<!-- /. WRAPPER  -->
+<!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
+<!-- JQUERY SCRIPTS -->
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.js"></script>
+<script src="js/custom.js"></script>
+
 
 </body>
 </html>
