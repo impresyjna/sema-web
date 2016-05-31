@@ -1,0 +1,19 @@
+<tr>
+  <td><%= question.content %></td>
+  <td><%= question.category.name %></td>
+  <td>
+    <% if question.confirmed %>
+        <img src="http://www.vi-decals.com/ocart/image/correct.png" width="25" height="25">
+    <% else %>
+        <img src="http://www.ratedartisan.com/images/delete1.png" width="25" height="25">
+    <% end %>
+  </td>
+  <td class="table_buttons">
+    <%= link_to "<i class='fa fa-pencil fa-2x'></i>".html_safe, edit_question_path(question) %>
+    <% if question.confirmed %>
+        <%= link_to "<i class='fa fa-trash fa-2x'></i>".html_safe, question, method: :delete %>
+    <% else %>
+        <%= link_to "<i class='fa fa-check fa-2x'></i>".html_safe, question, method: :delete %>
+    <% end %>
+  </td>
+</tr>

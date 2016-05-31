@@ -1,17 +1,11 @@
-<%= form_for(@question) do |f| %>
-  <% if @question.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@question.errors.count, "error") %> prohibited this question from being saved:</h2>
+<%= form_for @question do |f| %>
+    <%= render 'shared/error_messages', object: f.object %>
 
-      <ul>
-      <% @question.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+    <%= f.text_area :content, class: 'form-control', :required => true, :placeholder => "Treść" %>
+    <%= f.select :category_id, options_for_select(@categories, @question.category_id), {:include_blank => "Kategoria"}, {:class => "form-control"} %>
+    <%= f.hidden_field :confirmed, :value => true %>
 
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+    <%= f.submit "Zapisz", :class => "btn btn-danger btn-lg btn-block" %>
+
 <% end %>
+
