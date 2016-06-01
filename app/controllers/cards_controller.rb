@@ -45,7 +45,7 @@ class CardsController < ApplicationController
 
   private
     def card_params
-      params.require(:card).permit(:category_id, question_in_cards_attributes: [:card_id, :question_id])
+      params.require(:card).permit(:category_id, question_in_cards_attributes: [:id, :card_id, :question_id])
     end
 
 end
