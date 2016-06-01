@@ -1,62 +1,35 @@
 class CardsController < ApplicationController
-  before_action :set_card, only: [:show, :edit, :update, :destroy]
-
-  # GET /cards
-  # GET /cards.json
   def index
     @cards = Card.all
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @cards }
-    end
   end
 
-  # GET /cards/1
-  # GET /cards/1.json
-  def show
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @card }
-    end
-  end
-
-  # GET /cards/new
   def new
     @card = Card.new
+    @card.question_in_cards.build
   end
 
-  # GET /cards/1/edit
   def edit
+    @card = Card.find(params[:id])
   end
 
-  # POST /cards
-  # POST /cards.json
   def create
     @card = Card.new(card_params)
-
-    respond_to do |format|
-      if @card.save
-        format.html { redirect_to @card, notice: 'Card was successfully created.' }
-        format.json { render json: @card, status: :created }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @card.errors, status: :unprocessable_entity }
-      end
+    if @card.save
+      flash[:success] = "Dodano kartę"
+      redirect_to cards_path
+    else
+      flash[:warning] = "Nie udało się dodać karty"
+      render 'new'
     end
   end
 
-  # PATCH/PUT /cards/1
-  # PATCH/PUT /cards/1.json
   def update
-    respond_to do |format|
-      if @card.update(card_params)
-        format.html { redirect_to @card, notice: 'Card was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @card.errors, status: :unprocessable_entity }
-      end
+    @card = Card.find(params[:id])
+    if @card.update_attributes(card_params)
+      flash[:success] = "Zapisano"
+      redirect_to cards_path
+    else
+      render 'edit'
     end
   end
 
@@ -71,13 +44,8 @@ class CardsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_card
-      @card = Card.find(params[:id])
+    def card_params
+      params.require(:card).permit(:category_id, question_in_cards_attributes: [:card_id, :question_id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def card_params
-      params[:card]
-    end
 end

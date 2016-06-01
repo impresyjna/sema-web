@@ -12,7 +12,6 @@
             </tr>
             </thead>
             <tbody>
-            <% 10.times do %>
             <%= f.fields_for :question_in_cards, @card.question_in_cards do |s| %>
                 <tr>
                   <td><%= @number %></td>
@@ -21,7 +20,6 @@
                   </td>
                   <% @number = @number + 1 %>
                 </tr>
-            <% end %>
             <% end %>
             </tbody>
           </table>
