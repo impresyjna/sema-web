@@ -1,0 +1,4 @@
+<tr>
+  <td><%= link_to card_category.name, card_category %></td>
+  <td><%= Card.where(category_id: card_category.id).count %></td>
+</tr>

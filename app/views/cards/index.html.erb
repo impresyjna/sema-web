@@ -1,25 +1,31 @@
-<p id="notice"><%= notice %></p>
+<div class="row">
+  <div class="col-lg-12">
+    <h2>Kategorie</h2>
+    <h4>Wybierz kategorię, aby przejść do kart</h4>
+  </div>
+</div>
+<!-- /. ROW  -->
+<hr/>
+<!-- /. ROW  -->
+<div class="row text-center pad-top">
+  <div class="col-lg-12">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Nazwa</th>
+          <th>Ilość kart</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%= render :partial => 'categories/card_category', :collection => @categories %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
-<h1>Listing Cards</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @cards.each do |card| %>
-      <tr>
-        <td><%= link_to 'Show', card %></td>
-        <td><%= link_to 'Edit', edit_card_path(card) %></td>
-        <td><%= link_to 'Destroy', card, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<br>
 
-<%= link_to 'New Card', new_card_path %>

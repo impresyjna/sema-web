@@ -1,6 +1,6 @@
 class CardsController < ApplicationController
   def index
-    @cards = Card.all
+    @categories = Category.all
   end
 
   def new
@@ -36,11 +36,9 @@ class CardsController < ApplicationController
   # DELETE /cards/1
   # DELETE /cards/1.json
   def destroy
-    @card.destroy
-    respond_to do |format|
-      format.html { redirect_to cards_url }
-      format.json { head :no_content }
-    end
+    Card.find(params[:id]).destroy
+    flash[:success] = "Usunięto kartę"
+    redirect_to cards_path
   end
 
   private
