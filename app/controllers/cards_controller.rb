@@ -6,6 +6,9 @@ class CardsController < ApplicationController
   def new
     @card = Card.new
     @card.question_in_cards.build
+    @categories = Category.all.pluck(:name, :id)
+    @questions = Question.where(confirmed: true).pluck(:content, :id)
+
   end
 
   def edit

@@ -4,9 +4,15 @@ class CategoriesController < ApplicationController
     @categories = Category.all
   end
 
+  def show
+    @category = Category.find(params[:id])
+    @cards = @category.cards.paginate(per_page: 10, page: params[:page])
+  end
+
   def new
     @category = Category.new
   end
+
 
   def edit
     @category = Category.find(params[:id])

@@ -278,3 +278,28 @@ tr {
   height: auto;
 }
 
+.card {
+  padding: 5px 5px 5px 5px;
+}
+
+.card .inner {
+  background:#eee;
+  @include border-radius(4px);
+  font-size: 14px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.pagination {
+  font-size: 20px;
+  color: #333333;
+}
+
+.pagination>a {
+  color: #672900;
+}
+
+.pagination > .disabled > span {
+  background: none;
+  background-color: #FF9000;
+}

@@ -1,6 +1,6 @@
 class QuestionsController < ApplicationController
   def index
-    @questions = Question.all
+    @questions = Question.paginate(:page => params[:page], :per_page => 30)
   end
 
   def new

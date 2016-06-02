@@ -25,6 +25,7 @@ gem 'compass-rails'
 gem 'active_model_serializers'
 gem 'rack-cors', :require => 'rack/cors'
 gem "font-awesome-rails"
+gem 'will_paginate', '~> 3.1.0'
 
 group :development, :test do
   gem 'byebug'

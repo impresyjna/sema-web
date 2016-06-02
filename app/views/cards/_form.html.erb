@@ -2,7 +2,7 @@
   <%= form_for(@card, :html => {:multipart => true}) do |f| %>
       <%= render 'shared/error_messages', object: f.object %>
       <% @number = 1 %>
-      <%= f.select :category_id, options_for_select(Category.all.pluck(:name, :id), @card.category_id), {:include_blank => "Kategoria"}, {:class => "form-control1"} %>
+      <%= f.select :category_id, options_for_select(@categories, @card.category_id), {:include_blank => "Kategoria"}, {:class => "form-control1"} %>
 
       <div class="col-sm-12">
         <div class="table-responsive">
@@ -19,7 +19,7 @@
                 <tr>
                   <td><%= @number %></td>
                   <td>
-                    <%= s.select :question_id, options_for_select(Question.where(confirmed: true).pluck(:content, :id), s.object.question_id), {:include_blank => "Pytanie"}, {:class => "form-control1"} %>
+                    <%= s.select :question_id, options_for_select(@questions, s.object.question_id), {:include_blank => "Pytanie"}, {:class => "form-control1"} %>
                   </td>
                   <% @number = @number + 1 %>
                 </tr>
