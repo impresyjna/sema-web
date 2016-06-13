@@ -30,6 +30,7 @@ gem 'will_paginate', '~> 3.1.0'
 group :development, :test do
   gem 'byebug'
   gem 'mysql2', '~> 0.3.18'
+  gem 'seed_dump'
 end
 
 group :development do

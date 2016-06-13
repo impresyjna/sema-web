@@ -10,6 +10,10 @@ Rails.application.routes.draw do
 
       #questions
       resources :questions, :only => [:create]
+
+      #friendship
+      resources :friendships, :only => [:index, :create, :destroy]
+
       #sessions
       delete '/sessions/logout', to: 'sessions#destroy'
       post '/sessions/login', to: 'sessions#create'

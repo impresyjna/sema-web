@@ -1,630 +1,1309 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
-
-Question.create(content: "Masz w sobie dziki magnetyzm!", confirmed: true)
-Question.create(content: "Co robisz?", confirmed: true)
-Question.create(content: "Na Twoim punkcie.", confirmed: true)
-Question.create(content: "Myślisz o mnie trochę?", confirmed: true)
-Question.create(content: "Nie mogę.", confirmed: true)
-Question.create(content: "Pokaż języczek.", confirmed: true)
-Question.create(content: "Pięknie wyglądasz w bieliźnie.", confirmed: true)
-Question.create(content: "Zostań ze mną na jedną noc?!", confirmed: true)
-Question.create(content: "Wiesz czego chcesz.", confirmed: true)
-Question.create(content: "Może wyjdziemy?", confirmed: true)
-Question.create(content: "Śpię bez piżamy.", confirmed: true)
-Question.create(content: "Cierpisz na bezsenność.", confirmed: true)
-Question.create(content: "Medyka!", confirmed: true)
-Question.create(content: "Wyluzuj się.", confirmed: true)
-Question.create(content: "Tego już za wiele.", confirmed: true)
-Question.create(content: "Puść mi oczko.", confirmed: true)
-Question.create(content: "Gra fajna rzecz!", confirmed: true)
-Question.create(content: "Lubię grzeczne dziewczynki.", confirmed: true)
-Question.create(content: "Jesteś moim błędny rycerzem!", confirmed: true)
-Question.create(content: "Podnieca mnie twój biust", confirmed: true)
-Question.create(content: "Nie za późno?", confirmed: true)
-Question.create(content: "Niespodzianka!", confirmed: true)
-Question.create(content: "Najlepiej w nocy!", confirmed: true)
-Question.create(content: "Lubisz zwierzęta?", confirmed: true)
-Question.create(content: "Doprowadzasz mnie do rozpaczy", confirmed: true)
-Question.create(content: "Proszę oto walentynkowy bukiet.", confirmed: true)
-Question.create(content: "Masz długi miecz.", confirmed: true)
-Question.create(content: "Może pójdziemy pograć?", confirmed: true)
-Question.create(content: "Tylko twarde.", confirmed: true)
-Question.create(content: "Umyj zęby.", confirmed: true)
-Question.create(content: "Ale ciacho!", confirmed: true)
-Question.create(content: "Czuję się jak niewolnik na galerze.", confirmed: true)
-Question.create(content: "Namiętnie.", confirmed: true)
-Question.create(content: "Odrobię Ci łapy!", confirmed: true)
-Question.create(content: "Pomóc Ci?", confirmed: true)
-Question.create(content: "Podniecają mnie blondyni(ki)!", confirmed: true)
-Question.create(content: "O Ty brzydalu.", confirmed: true)
-Question.create(content: "Seksownie się uśmiechasz.", confirmed: true)
-Question.create(content: "Nie obrażaj mnie!", confirmed: true)
-Question.create(content: "Znam przepis na shuizhu roupian.", confirmed: true)
-Question.create(content: "Wrrrrrr.... masz bicz wampa?", confirmed: true)
-Question.create(content: "Zwolnij nie tak szybko!", confirmed: true)
-Question.create(content: "Brak Ci pomysłów.", confirmed: true)
-Question.create(content: "Ale tekst!", confirmed: true)
-Question.create(content: "Nie lubię brunetów(ek)!", confirmed: true)
-Question.create(content: "Pójdziesz ze mną do lasu?", confirmed: true)
-Question.create(content: "Hipnotyzujesz mnie.", confirmed: true)
-Question.create(content: "Czy mogę być Twoim Kamratem?", confirmed: true)
-Question.create(content: "Jesteś nachalny(a)!", confirmed: true)
-Question.create(content: "Prześladujesz mnie!", confirmed: true)
-Question.create(content: "Uduchawiasz mnie.", confirmed: true)
-Question.create(content: "Masz talię osy?!", confirmed: true)
-Question.create(content: "Nie papuguj.", confirmed: true)
-Question.create(content: "Masz seksowne rzęsy.", confirmed: true)
-Question.create(content: "Będziesz moim medykiem?", confirmed: true)
-Question.create(content: "Wolę osoby w innym typie!", confirmed: true)
-Question.create(content: "Z Tobą zawsze i wszędzie.", confirmed: true)
-Question.create(content: "Czy jesteś tolerancyjny(a)?", confirmed: true)
-Question.create(content: "Wolę brunetki(ów)", confirmed: true)
-Question.create(content: "We mnie!", confirmed: true)
-Question.create(content: "Ktoś mi dodał do napoju jagód odurzających.", confirmed: true)
-Question.create(content: "Czemu mnie nie zauważasz?", confirmed: true)
-Question.create(content: "Człowiek, człowiekowi nie jest równy.", confirmed: true)
-Question.create(content: "Popłyniemy razem łódką na Sicz?", confirmed: true)
-Question.create(content: "Co za uśmiech.", confirmed: true)
-Question.create(content: "Podłożyłem Ci bombę pieprzową!", confirmed: true)
-Question.create(content: "Wolę to drugie.", confirmed: true)
-Question.create(content: "Niestety nie.", confirmed: true)
-Question.create(content: "Wyglądasz bardzo staro.", confirmed: true)
-Question.create(content: "Nie teraz.", confirmed: true)
-Question.create(content: "Tak.", confirmed: true)
-Question.create(content: "Rzuciłeś na mnie urok.", confirmed: true)
-Question.create(content: "Lubisz herbaciany wywar?", confirmed: true)
-Question.create(content: "Lubię niewyżytych(e)!", confirmed: true)
-Question.create(content: "Miło się z Tobą rozmawia!", confirmed: true)
-Question.create(content: "Podniecają mnie bruneci(tki)!", confirmed: true)
-Question.create(content: "Szukam rycerza(ki) na noc!", confirmed: true)
-Question.create(content: "Szaleję za Tobą!", confirmed: true)
-Question.create(content: "Umyj zęby jak do mnie mówisz.", confirmed: true)
-Question.create(content: "Twój miecz jest jedno czy dwuręczny?", confirmed: true)
-Question.create(content: "My razem?!", confirmed: true)
-Question.create(content: "Podobno z nami jest Kozak?", confirmed: true)
-Question.create(content: "Razem czy osobno?", confirmed: true)
-Question.create(content: "Zabójczo na mnie patrzysz!", confirmed: true)
-Question.create(content: "Może poflirtujemy?", confirmed: true)
-Question.create(content: "Oddaje Ci swoje serce.", confirmed: true)
-Question.create(content: "Wyglądasz jak tygrys(ica)!", confirmed: true)
-Question.create(content: "Zejdź ze mnie.", confirmed: true)
-Question.create(content: "Spotkajmy się jutro sami.", confirmed: true)
-Question.create(content: "Może jutro?", confirmed: true)
-Question.create(content: "Nuda.", confirmed: true)
-Question.create(content: "Lubię panów z brzuszkiem.", confirmed: true)
-Question.create(content: "Pokaż więcej.", confirmed: true)
-Question.create(content: "Chyba się zakochałem(am).", confirmed: true)
-Question.create(content: "Dużo jesz?", confirmed: true)
-Question.create(content: "Daj całusa!", confirmed: true)
-Question.create(content: "Lubisz pozować do zdjęć?", confirmed: true)
-Question.create(content: "Ależ owszem czemu nie, Tobie też należy się!", confirmed: true)
-Question.create(content: "Pokaż się z innej strony.", confirmed: true)
-Question.create(content: "W co?", confirmed: true)
-Question.create(content: "Fajna z Ciebie laska!", confirmed: true)
-Question.create(content: "Fajny z Ciebie gość!", confirmed: true)
-Question.create(content: "Zaopiekuję się Tobą!", confirmed: true)
-Question.create(content: "Ze mną?", confirmed: true)
-Question.create(content: "Zostań moim aniołem!", confirmed: true)
-Question.create(content: "Wyglądasz bardzo dojrzale.", confirmed: true)
-Question.create(content: "Też tak uważam.", confirmed: true)
-Question.create(content: "Kocham kwiaty!", confirmed: true)
-Question.create(content: "Wiem, że masz ochotę.", confirmed: true)
-Question.create(content: "Twój widok doprowadza nie do ekstazy.", confirmed: true)
-Question.create(content: "Nigdy z Tobą!", confirmed: true)
-Question.create(content: "Żółty kwiat to zdrada.", confirmed: true)
-Question.create(content: "Nago?", confirmed: true)
-Question.create(content: "Wyjdź zaraz po mnie.", confirmed: true)
-Question.create(content: "Siebie!", confirmed: true)
-Question.create(content: "Masz ochotę?", confirmed: true)
-Question.create(content: "Ty też jesteś opryskliwy(a)?!", confirmed: true)
-Question.create(content: "Może innym razem.", confirmed: true)
-Question.create(content: "Powtarzasz się.", confirmed: true)
-Question.create(content: "Muszę się odmłodzić.", confirmed: true)
-Question.create(content: "Pokaż mi jak to się robi.", confirmed: true)
-Question.create(content: "Z Tobą!", confirmed: true)
-Question.create(content: "Jesteś dla mnie za stary(a)", confirmed: true)
-Question.create(content: "Jesteś taka(i) piękna(y)!", confirmed: true)
-Question.create(content: "Przykro mi.", confirmed: true)
-Question.create(content: "Czemu się rumienisz?", confirmed: true)
-Question.create(content: "Ty mi też!", confirmed: true)
-Question.create(content: "Ok!", confirmed: true)
-Question.create(content: "Mam kluczyk do twego serca!", confirmed: true)
-Question.create(content: "Nigdy.", confirmed: true)
-Question.create(content: "Bądź oryginalny(a).", confirmed: true)
-Question.create(content: "Wydaje Ci się.", confirmed: true)
-Question.create(content: "Nu! Nu! Nu!", confirmed: true)
-Question.create(content: "Pogramy w butelkę.", confirmed: true)
-Question.create(content: "Często to robisz?", confirmed: true)
-Question.create(content: "Odejdź!", confirmed: true)
-Question.create(content: "Chyba stwardniały Ci brodawki.", confirmed: true)
-Question.create(content: "Dziękuję.", confirmed: true)
-Question.create(content: "Czy mogę wypić z Tobą toast?", confirmed: true)
-Question.create(content: "Nie odważysz się...", confirmed: true)
-Question.create(content: "Mogę zajrzeć w Twój dekolt?", confirmed: true)
-Question.create(content: "Bara... bara...", confirmed: true)
-Question.create(content: "Fajna rzecz.", confirmed: true)
-Question.create(content: "Lubię maki.", confirmed: true)
-Question.create(content: "Masz piękne imię.", confirmed: true)
-Question.create(content: "Oczko Ci leci.", confirmed: true)
-Question.create(content: "Rozpalasz mnie jak ognień grecki!", confirmed: true)
-Question.create(content: "Może teatr?", confirmed: true)
-Question.create(content: "Chyba się mnie nie wstydzisz!", confirmed: true)
-Question.create(content: "Zostań moim błędnym rycerzem!", confirmed: true)
-Question.create(content: "Nigdy więcej.", confirmed: true)
-Question.create(content: "Co pijesz?", confirmed: true)
-Question.create(content: "Sok.", confirmed: true)
-Question.create(content: "Lemoniadę.", confirmed: true)
-Question.create(content: "Gin z tonikiem. Wstrząśnięty, niemieszany.", confirmed: true)
-Question.create(content: "Onieśmielasz mnie.", confirmed: true)
-Question.create(content: "Robisz zdjęcia?", confirmed: true)
-Question.create(content: "Całuski ślę!", confirmed: true)
-Question.create(content: "Dlaczego?", confirmed: true)
-Question.create(content: "Zmieńmy temat.", confirmed: true)
-Question.create(content: "To nie ma nic do rzeczy.", confirmed: true)
-Question.create(content: "Szpieg!", confirmed: true)
-Question.create(content: "Daj mordy!", confirmed: true)
-Question.create(content: "Masz kuszacy wzrok.", confirmed: true)
-Question.create(content: "Podniecają mnie twoje usta!", confirmed: true)
-Question.create(content: "Jesteś delikatny(a) jak kwiat lotosu.", confirmed: true)
-Question.create(content: "Nie musisz mnie jeść.", confirmed: true)
-Question.create(content: "Peszę Cię?", confirmed: true)
-Question.create(content: "Jesteś moją damą serca!", confirmed: true)
-Question.create(content: "Ponętnie spoglądasz.", confirmed: true)
-Question.create(content: "Bądź grzeczny(a).", confirmed: true)
-Question.create(content: "Nie broń się!", confirmed: true)
-Question.create(content: "O Tobie.", confirmed: true)
-Question.create(content: "Granatowa pościel z jedwabiu. My?", confirmed: true)
-Question.create(content: "Pociągasz mnie!", confirmed: true)
-Question.create(content: "A Ty?", confirmed: true)
-Question.create(content: "Zostan moją Panią!", confirmed: true)
-Question.create(content: "Chce mi się spać.", confirmed: true)
-Question.create(content: "Chodźmy do pomieszczenia obok.", confirmed: true)
-Question.create(content: "Nie spodziewałam(em) się tego po Tobie!", confirmed: true)
-Question.create(content: "Zwariowałaś(eś)", confirmed: true)
-Question.create(content: "Nie oszukuj!", confirmed: true)
-Question.create(content: "Z wrażenia zrobiło mi się gorąco!", confirmed: true)
-Question.create(content: "Jestem groźną amazanką!", confirmed: true)
-Question.create(content: "Gdzie?", confirmed: true)
-Question.create(content: "Bardzo chętnie!", confirmed: true)
-Question.create(content: "Miły wieczór.", confirmed: true)
-Question.create(content: "Kochanie, pozdrawiam.", confirmed: true)
-Question.create(content: "Śpię bez bielizny.", confirmed: true)
-Question.create(content: "Na pewno nie Tobie!", confirmed: true)
-Question.create(content: "Interesuje Cię to?", confirmed: true)
-Question.create(content: "Przecież Cię nie znam.", confirmed: true)
-Question.create(content: "Ach te wargi.", confirmed: true)
-Question.create(content: "Chodzisz mi po piętach.", confirmed: true)
-Question.create(content: "Porwę Cię dla okupu!", confirmed: true)
-Question.create(content: "Nie jesteś w moim typie.", confirmed: true)
-Question.create(content: "Lubię niegrzeczne dziewczyny.", confirmed: true)
-Question.create(content: "Lubisz chłopaków?", confirmed: true)
-Question.create(content: "Co Ty ode mnie chcesz?", confirmed: true)
-Question.create(content: "O nas!", confirmed: true)
-Question.create(content: "Ja na górze, Ty na dole?", confirmed: true)
-Question.create(content: "Nie marudź.", confirmed: true)
-Question.create(content: "Jak na lato!", confirmed: true)
-Question.create(content: "No to Ci pomogę.", confirmed: true)
-Question.create(content: "Chętnie bym Cię schrupał(a)!", confirmed: true)
-Question.create(content: "Wyglądasz bardzo młodo.", confirmed: true)
-Question.create(content: "Czemu nie.", confirmed: true)
-Question.create(content: "Blondyni(ki) górą!", confirmed: true)
-Question.create(content: "Do gry czy na spacer?", confirmed: true)
-Question.create(content: "I to szybko.", confirmed: true)
-Question.create(content: "Zrobisz mi zdjęcia?", confirmed: true)
-Question.create(content: "Śpię nago.", confirmed: true)
-Question.create(content: "﻿Myślał indyk o niedzieli... ", confirmed: true)
-Question.create(content: "Sam(a) bym chciał(a) wiedzieć ", confirmed: true)
-Question.create(content: "Jesteś pewny(a) siebie ", confirmed: true)
-Question.create(content: "Nie rozmieniaj się na drobne ", confirmed: true)
-Question.create(content: "Pofiglujemy trochę ", confirmed: true)
-Question.create(content: "Pociągasz mnie ", confirmed: true)
-Question.create(content: "Zawsze taki(a) jestem ", confirmed: true)
-Question.create(content: "Jeśli nie chcesz mojej zguby, krokodyla daj mi luby ", confirmed: true)
-Question.create(content: "Nic nie pomoże, jeśli Ty nie pomożesz dziś miłości ", confirmed: true)
-Question.create(content: "Znajdź sobie inny obiekt ", confirmed: true)
-Question.create(content: "Nie patrz tak na mnie, bo mi kurzajka wyskoczy ", confirmed: true)
-Question.create(content: "Nie dokazuj miły(a), nie dokazuj ", confirmed: true)
-Question.create(content: "W grudniu po południu ", confirmed: true)
-Question.create(content: "Porwę cię ", confirmed: true)
-Question.create(content: "Denerwujesz mnie ", confirmed: true)
-Question.create(content: "Zapraszam na lody ", confirmed: true)
-Question.create(content: "Nie obiecuj, nie obiecuj!", confirmed: true)
-Question.create(content: "Co mi zrobisz jak mnie złapiesz...", confirmed: true)
-Question.create(content: "Gdyby jutra nie było, to...", confirmed: true)
-Question.create(content: "Oj,kusisz mnie...", confirmed: true)
-Question.create(content: "Jestem gotowa(y) na...", confirmed: true)
-Question.create(content: "Powiedz tylko słowo, a...", confirmed: true)
-Question.create(content: "Mam ochotę na...", confirmed: true)
-Question.create(content: "Czuję, że...", confirmed: true)
-Question.create(content: "Drżę na myśl...", confirmed: true)
-Question.create(content: "Być może, być może...", confirmed: true)
-Question.create(content: "Nie bądź taki(a) mądry(a)..", confirmed: true)
-Question.create(content: "Uważaj...", confirmed: true)
-Question.create(content: "A nie za dużo byś chciał(a)...", confirmed: true)
-Question.create(content: "Nie umiem Ci odmówić...", confirmed: true)
-Question.create(content: "Nic nie widzę, nic nie słyszę...", confirmed: true)
-Question.create(content: "Z Tobą zawsze i wszędzie...", confirmed: true)
-Question.create(content: "Jesteś dla mnie jak cukierek, aż boję się rozwinąć...", confirmed: true)
-Question.create(content: "Odpuść sobie lepiej...", confirmed: true)
-Question.create(content: "Naprawdę??...", confirmed: true)
-Question.create(content: "Proszę Cię, nie rozśmieszaj mnie...", confirmed: true)
-Question.create(content: "Czy to aby nie zazdrość?", confirmed: true)
-Question.create(content: "Szkoda, że nie spotkaliśmy się wcześniej, booo...", confirmed: true)
-Question.create(content: "Przeszył mnie dreszcz emocji...", confirmed: true)
-Question.create(content: "Przestań!...", confirmed: true)
-Question.create(content: "Jak by tak....", confirmed: true)
-Question.create(content: "A może zgrzeszymy jednak...", confirmed: true)
-Question.create(content: "Nie mogę....", confirmed: true)
-Question.create(content: "A może buziaka na zgodę?...", confirmed: true)
-Question.create(content: "Sprawiasz mi przykrość...", confirmed: true)
-Question.create(content: "Nie mów tak...", confirmed: true)
-Question.create(content: "Przepraszam...", confirmed: true)
-Question.create(content: "A może jednak...", confirmed: true)
-Question.create(content: "Śniłaś(eś) mi się...", confirmed: true)
-Question.create(content: "No cóż, każda potwora znajdzie swego amatora...", confirmed: true)
-Question.create(content: "Bo do tanga trzeba dwojga...", confirmed: true)
-Question.create(content: "Myślę o Tobie...", confirmed: true)
-Question.create(content: "Chyba nic z tego...", confirmed: true)
-Question.create(content: "Dajmy sobie szansę...", confirmed: true)
-Question.create(content: "Nie, dziękuję...", confirmed: true)
-Question.create(content: "Jestem tu i teraz...", confirmed: true)
-Question.create(content: "Porozmawiamy o tym jutro...", confirmed: true)
-Question.create(content: "Muszę to przemyśleć...", confirmed: true)
-Question.create(content: "Nic już nie wiem...", confirmed: true)
-Question.create(content: "I tak nic nie upolujesz...", confirmed: true)
-Question.create(content: "Nie wysilaj się...", confirmed: true)
-Question.create(content: "Nie wycofuj się teraz...", confirmed: true)
-Question.create(content: "Rzucam oficjalnie fochem...", confirmed: true)
-Question.create(content: "Pa pa...", confirmed: true)
-Question.create(content: "Było miło, ale się skończyło...", confirmed: true)
-Question.create(content: "#ARG!", confirmed: true)
-Question.create(content: "Tak bym chciał(a) spotkać się...", confirmed: true)
-Question.create(content: "Nie mogę dać Ci tego...", confirmed: true)
-Question.create(content: "Muszę odmówić...", confirmed: true)
-Question.create(content: "Jestem za a nawet przeciw...", confirmed: true)
-Question.create(content: "Gorąco mi....", confirmed: true)
-Question.create(content: "Za szybko, za szybko...", confirmed: true)
-Question.create(content: "Napiszę wiersz dla Ciebie...", confirmed: true)
-Question.create(content: "Za dużo słów, za mało czynów...", confirmed: true)
-Question.create(content: "A gdybym zaprosił (a) Ciebie na kawę...", confirmed: true)
-Question.create(content: "A może na piwo skoczymy...", confirmed: true)
-Question.create(content: "Lubisz mnie choć troszkę...", confirmed: true)
-Question.create(content: "Mów prawdę!:)...", confirmed: true)
-Question.create(content: "Nie wierzę Ci jakoś...", confirmed: true)
-Question.create(content: "Będziesz jutro?...", confirmed: true)
-Question.create(content: "To chociaż do kina?...", confirmed: true)
-Question.create(content: "Nic nie rozumiem...", confirmed: true)
-Question.create(content: "Muszę lecieć...", confirmed: true)
-Question.create(content: "Jutro tez jest dzień...", confirmed: true)
-Question.create(content: "Zastanowię się...", confirmed: true)
-Question.create(content: "Ciężka sprawa...", confirmed: true)
-Question.create(content: "Bardzo mnie to martwi...", confirmed: true)
-Question.create(content: "Dziękuję...", confirmed: true)
-Question.create(content: "Jesteśmy jak dwie połówki jabłka...", confirmed: true)
-Question.create(content: "Zdecyduj się...", confirmed: true)
-Question.create(content: "Nie chcę kłopotów...", confirmed: true)
-Question.create(content: "Dyplomata(ka)..", confirmed: true)
-Question.create(content: "Dogadamy się jakoś..", confirmed: true)
-Question.create(content: "Aleś Pan(i) niecierpliwy(a)...", confirmed: true)
-Question.create(content: "Fajnie mi z Tobą...", confirmed: true)
-Question.create(content: "I co teraz?...", confirmed: true)
-Question.create(content: "A choć cień nadziei?...", confirmed: true)
-Question.create(content: "Zrobię co zechcesz, ale powiedz tak...", confirmed: true)
-Question.create(content: "Zgadnij...", confirmed: true)
-Question.create(content: "Do jutra podejmę decyzję...", confirmed: true)
-Question.create(content: "Zapraszam na przejażdżkę...", confirmed: true)
-Question.create(content: "A może urządzimy grilla?...", confirmed: true)
-Question.create(content: "Sknera...", confirmed: true)
-Question.create(content: "Flirciarz(ra) zawodowy(a)...", confirmed: true)
-Question.create(content: "Buziak na dobranoc...", confirmed: true)
-Question.create(content: "Bo przyjaciołom się UFO...", confirmed: true)
-Question.create(content: "Dajesz mi inspirację...", confirmed: true)
-Question.create(content: "Cieszę się, że Cię poznałam(em)...", confirmed: true)
-Question.create(content: "Mam pewien z tym kłopot...", confirmed: true)
-Question.create(content: "Pomożesz mi...", confirmed: true)
-Question.create(content: "I już Cię lubię za to...", confirmed: true)
-Question.create(content: "No cóż, wszędzie mnie pełno...", confirmed: true)
-Question.create(content: "Nie obawiaj się mnie...", confirmed: true)
-Question.create(content: "Krzywdy z mojej strony nie zaznasz...", confirmed: true)
-Question.create(content: "Może kolacyjka...", confirmed: true)
-Question.create(content: "Bądźmy szczerzy...", confirmed: true)
-Question.create(content: "Co dwie głowy to nie jedna...", confirmed: true)
-Question.create(content: "Płyń po morzach i oceanach...", confirmed: true)
-Question.create(content: "Generalnie może być...", confirmed: true)
-Question.create(content: "Wyszło, że musze się zgodzić z Tobą...", confirmed: true)
-Question.create(content: "Pożyjemy, zobaczymy...", confirmed: true)
-Question.create(content: "To co z tym buziakiem?...", confirmed: true)
-Question.create(content: "Namyśliłeś(aś) się?...", confirmed: true)
-Question.create(content: "Porozmawiamy o tym?...", confirmed: true)
-Question.create(content: "No, nie jest dobrze...", confirmed: true)
-Question.create(content: "Mamy czas...", confirmed: true)
-Question.create(content: "A co się stało?...", confirmed: true)
-Question.create(content: "Jeśli będzie Ci źle, możesz na mnie liczyć...", confirmed: true)
-Question.create(content: "Pojedźmy gdzieś...", confirmed: true)
-Question.create(content: "A jesteś przekupny(a)?...", confirmed: true)
-Question.create(content: "Gdziekolwiek Ty, tam i ja...", confirmed: true)
-Question.create(content: "Czuję Twój oddech za sobą...", confirmed: true)
-Question.create(content: "Twój uśmiech mnie powala...", confirmed: true)
-Question.create(content: "Daj mi słowo, proszę...", confirmed: true)
-Question.create(content: "Jestem już Twój(oja)...", confirmed: true)
-Question.create(content: "Żartowniś(nisia)...", confirmed: true)
-Question.create(content: "I vice versa:)...", confirmed: true)
-Question.create(content: "Ktoś tu pracuje na dwa fronty...:)", confirmed: true)
-Question.create(content: "Zasady są jasne...", confirmed: true)
-Question.create(content: "Wybacz mi, nie chciałam(em)...", confirmed: true)
-Question.create(content: "Gdyby to było takie proste...", confirmed: true)
-Question.create(content: "Trzeba tylko mocno chcieć...", confirmed: true)
-Question.create(content: "Wróżka, normalnie...", confirmed: true)
-Question.create(content: "Ale ja tak bardzo chcę...", confirmed: true)
-Question.create(content: "Rozważ to raz jeszcze, proszę...", confirmed: true)
-Question.create(content: "Jakie to miłe...", confirmed: true)
-Question.create(content: "Skromność to moje drugie imię...", confirmed: true)
-Question.create(content: "Nieśmiały(a) jestem...", confirmed: true)
-Question.create(content: "Piękne oczy masz, komu je dasz...", confirmed: true)
-Question.create(content: "Jesteś super...", confirmed: true)
-Question.create(content: "Zaraz dam Ci sprośnego buziaka...", confirmed: true)
-Question.create(content: "Po prostu mi się podobasz, i co mam z tym zrobić...", confirmed: true)
-Question.create(content: "Niewygodny temat?...", confirmed: true)
-Question.create(content: "Damy jakoś radę...", confirmed: true)
-Question.create(content: "Powiało chłodem...", confirmed: true)
-Question.create(content: "Czuję niepokój...", confirmed: true)
-Question.create(content: "Jesteś zaborczy(a)...", confirmed: true)
-Question.create(content: "Przepraszam, to z zazdrości...", confirmed: true)
-Question.create(content: "Szkoda, że jesteś kobietą...", confirmed: true)
-Question.create(content: "Mogę zaproponować Ci tylko przyjaźń...", confirmed: true)
-Question.create(content: "Dzięki Tobie, trochę się otworzyłem(am)...", confirmed: true)
-Question.create(content: "Chętnie pokażę Ci mój świat...", confirmed: true)
-Question.create(content: "Mam ze sobą problem...", confirmed: true)
-Question.create(content: "Brakuje mi Ciebie...", confirmed: true)
-Question.create(content: "Uwielbiam te rozmowy z Tobą...", confirmed: true)
-Question.create(content: "Dlaczego akurat ja?...", confirmed: true)
-Question.create(content: "Jestem pełna(łen) wątpliwości...", confirmed: true)
-Question.create(content: "Bo tak!...", confirmed: true)
-Question.create(content: "Masz coś w sobie, co mnie do Ciebie ciągnie...", confirmed: true)
-Question.create(content: "Nie umiem tego nazwać...", confirmed: true)
-Question.create(content: "Dodajesz mi wiary w siebie...", confirmed: true)
-Question.create(content: "Cieszę się...", confirmed: true)
-Question.create(content: "Miłego dnia...", confirmed: true)
-Question.create(content: "Śnij o mnie...", confirmed: true)
-Question.create(content: "To dobrze...", confirmed: true)
-Question.create(content: "Może tak być...", confirmed: true)
-Question.create(content: "Niezupełnie rozumiem...", confirmed: true)
-Question.create(content: "Mam doła..", confirmed: true)
-Question.create(content: "Rozweselić Cię...", confirmed: true)
-Question.create(content: "Sklonuję Cię...", confirmed: true)
-Question.create(content: "Would you go bed with me...", confirmed: true)
-Question.create(content: "Czemu jest jak jest?...", confirmed: true)
-Question.create(content: "Zmieńmy to...", confirmed: true)
-Question.create(content: "Trudno mi się z Tobą rozstać...", confirmed: true)
-Question.create(content: "Będę płakać...", confirmed: true)
-Question.create(content: "Spadam już...", confirmed: true)
-Question.create(content: "Uwierz w siebie...", confirmed: true)
-Question.create(content: "Jesteś szalony(a)...", confirmed: true)
-Question.create(content: "Czas leci, jaka decyzja?...", confirmed: true)
-Question.create(content: "No, przecież wiesz o co mi chodzi...", confirmed: true)
-Question.create(content: "Nie generalizuj...", confirmed: true)
-Question.create(content: "Nie tłumacz się...", confirmed: true)
-Question.create(content: "Tak samo tego chcesz jak ja...", confirmed: true)
-Question.create(content: "Lubisz TO, prawda?...", confirmed: true)
-Question.create(content: "Jesteśmy tak blisko, ale jednocześnie tak daleko...", confirmed: true)
-Question.create(content: "Nie dam rady tak dalej...", confirmed: true)
-Question.create(content: "Nie poddawaj się nigdy...", confirmed: true)
-Question.create(content: "Chory(a) jestem...", confirmed: true)
-Question.create(content: "Porozmawiaj ze mną, proszę...", confirmed: true)
-Question.create(content: "Dawno Cię tu nie było...", confirmed: true)
-Question.create(content: "Czyżby koniec Bejbe?...", confirmed: true)
-Question.create(content: "Nie kłam...", confirmed: true)
-Question.create(content: "Tak mi łatwo uwierzyć w to, co mówisz...", confirmed: true)
-Question.create(content: "To nie może być prawda...", confirmed: true)
-Question.create(content: "Próbuj, próbuj...", confirmed: true)
-Question.create(content: "Myślę i myślę...", confirmed: true)
-Question.create(content: "To tylko zabawa...", confirmed: true)
-Question.create(content: "Pierwsza klasa...", confirmed: true)
-Question.create(content: "O gustach się nie dyskutuje...", confirmed: true)
-Question.create(content: "Wyjeżdżam...", confirmed: true)
-Question.create(content: "Jakieś argumenty poproszę...", confirmed: true)
-Question.create(content: "Powiedzmy, że tak i co dalej?...", confirmed: true)
-Question.create(content: "Szkoda, że tak daleko mieszkasz...", confirmed: true)
-Question.create(content: "No, ładnie się zapowiada...", confirmed: true)
-Question.create(content: "Może kubełek zimnej wody?...", confirmed: true)
-Question.create(content: "A masz 18 lat...", confirmed: true)
-Question.create(content: "Wszystkiego najlepszego...", confirmed: true)
-Question.create(content: "Okej...", confirmed: true)
-Question.create(content: "Niech i tak będzie...", confirmed: true)
-Question.create(content: "Brawo!...", confirmed: true)
-Question.create(content: "Gratuluję...", confirmed: true)
-Question.create(content: "Bywaj...", confirmed: true)
-Question.create(content: "Nie wszystko jest do d...", confirmed: true)
-Question.create(content: "Nie chce mi się...", confirmed: true)
-Question.create(content: "A jakieś dobre słowo...", confirmed: true)
-Question.create(content: "Poczekaj jeszcze chwilkę...", confirmed: true)
-Question.create(content: "Cieszę się...", confirmed: true)
-Question.create(content: "I bardzo dobrze!...", confirmed: true)
-Question.create(content: "Czemu tak rzadko tutaj bywasz?...", confirmed: true)
-Question.create(content: "Chcesz mi coś przez to powiedzieć?...", confirmed: true)
-Question.create(content: "A może jestem zbyt bezpośredni(a)?...", confirmed: true)
-Question.create(content: "Nie chciałam(em) Cię dotknąć...", confirmed: true)
-Question.create(content: "Słuchaj, myślę, że już najwyższy czas...", confirmed: true)
-Question.create(content: "Nie do końca mnie rozumiesz...", confirmed: true)
-Question.create(content: "Wróćmy do meritum...", confirmed: true)
-Question.create(content: "Przeszkadza Ci to, dlaczego?...", confirmed: true)
-Question.create(content: "A jaka różnica? ...", confirmed: true)
-Question.create(content: "Masz chwilkę dla mnie? ...", confirmed: true)
-Question.create(content: "Chętnie...", confirmed: true)
-Question.create(content: "Ale tempo...", confirmed: true)
-Question.create(content: "To ja wiem lepiej...", confirmed: true)
-Question.create(content: "I znowu swoje...", confirmed: true)
-Question.create(content: "Męczysz mnie...", confirmed: true)
-Question.create(content: "Czy Tobie trzeba dwa razy powtarzać?...", confirmed: true)
-Question.create(content: "Trochę już się niecierpliwię...", confirmed: true)
-Question.create(content: "Właściwie, po co to wszystko?...", confirmed: true)
-Question.create(content: "Masz we mnie bratnią duszę...", confirmed: true)
-Question.create(content: "Mówię absolutnie szczerze...", confirmed: true)
-Question.create(content: "A po miałbym(łabym) kręcić?...", confirmed: true)
-Question.create(content: "Czy te oczy mogą kłamać?...", confirmed: true)
-Question.create(content: "Cokolwiek to jest, niech się stanie...", confirmed: true)
-Question.create(content: "Będzie co ma być...", confirmed: true)
-Question.create(content: "Takie żarty to nie ze mną...Brunner:))...", confirmed: true)
-Question.create(content: "Tak jest!...", confirmed: true)
-Question.create(content: "To jakie dyspozycje?...", confirmed: true)
-Question.create(content: "Uważaj, co mówisz...", confirmed: true)
-Question.create(content: "Ale nie obrazisz się?...", confirmed: true)
-Question.create(content: "Jesteś czarodziejem(jką)!...", confirmed: true)
-Question.create(content: "A masz czarodziejską różdżkę przy sobie?...", confirmed: true)
-Question.create(content: "Skoro tak, to okej...", confirmed: true)
-Question.create(content: "Przekonałeś(aś) mnie...", confirmed: true)
-Question.create(content: "Nie mam nic do zaoferowania...", confirmed: true)
-Question.create(content: "Szczerze mówiąc, nie wiem...", confirmed: true)
-Question.create(content: "Po co Ci to wiedzieć?...", confirmed: true)
-Question.create(content: "A może jakaś kolacyjka?...", confirmed: true)
-Question.create(content: "A długo Cię nie będzie?...", confirmed: true)
-Question.create(content: "Wyjeżdżasz?...", confirmed: true)
-Question.create(content: "Będę tęsknić strasznie...", confirmed: true)
-Question.create(content: "Proszę bardzo...", confirmed: true)
-Question.create(content: "A idź już sobie...", confirmed: true)
-Question.create(content: "No, jak rzep normalnie...", confirmed: true)
-Question.create(content: "A to niby dlaczego?...", confirmed: true)
-Question.create(content: "Lubię kiedy tak do mnie mówisz...", confirmed: true)
-Question.create(content: "Nie czaruj mnie, bo jeszcze uwierzę...", confirmed: true)
-Question.create(content: "Jestem jak rzep...", confirmed: true)
-Question.create(content: "Daj mi szansę, proszę...", confirmed: true)
-Question.create(content: "Widać tak już musi być...", confirmed: true)
-Question.create(content: "No ani me ani be ani kukuryku...", confirmed: true)
-Question.create(content: "Błąd!...", confirmed: true)
-Question.create(content: "Chciałbym(łabym), ale boję się...", confirmed: true)
-Question.create(content: "To nie jest takie proste...", confirmed: true)
-Question.create(content: "Widzę Cię w swoich snach...", confirmed: true)
-Question.create(content: "Uwielbiam takie 'kwiatki'...", confirmed: true)
-Question.create(content: "No to masz z głowy...", confirmed: true)
-Question.create(content: "A co, a co?...", confirmed: true)
-Question.create(content: "Co tu się dzieje?...", confirmed: true)
-Question.create(content: "Nie i już...", confirmed: true)
-Question.create(content: "A co, masz inne preferencje?...", confirmed: true)
-Question.create(content: "Serce mi krwawi...", confirmed: true)
-Question.create(content: "Nie dam rady dalej...", confirmed: true)
-Question.create(content: "Puśćmy to w niepamięć, dobrze...", confirmed: true)
-Question.create(content: "Napijmy się za nas tu i teraz...", confirmed: true)
-Question.create(content: "To nie było mądre...", confirmed: true)
-Question.create(content: "Mamy problem...", confirmed: true)
-Question.create(content: "Skąd to wiesz?...", confirmed: true)
-Question.create(content: "A co to śledztwo?...", confirmed: true)
-Question.create(content: "Ale Ty dużo pytań zadajesz?...", confirmed: true)
-Question.create(content: "Pomożesz mi?...", confirmed: true)
-Question.create(content: "Jestem nieprzytomny(a)...", confirmed: true)
-Question.create(content: "Zabijasz mnie...", confirmed: true)
-Question.create(content: "Róbmy rząd i chodźmy stąd...", confirmed: true)
-Question.create(content: "Zgubiłem(am) się już...", confirmed: true)
-Question.create(content: "Pomożesz mi?...", confirmed: true)
-Question.create(content: "Brak inwencji?...", confirmed: true)
-Question.create(content: "Bądź bardziej kreatywny(a)...", confirmed: true)
-Question.create(content: "Dobra, mów...", confirmed: true)
-Question.create(content: "Trochę się spieszę...", confirmed: true)
-Question.create(content: "Za bardzo mnie poganiasz...", confirmed: true)
-Question.create(content: "Cóz...", confirmed: true)
-Question.create(content: "Kłamczuch...", confirmed: true)
-Question.create(content: "Ale mi wodę zalewaaasz..", confirmed: true)
-Question.create(content: "Wino, piwo a może po maluchu?...", confirmed: true)
-Question.create(content: "Już jestem spokojny(a)...", confirmed: true)
-Question.create(content: "Obawiasz się mnie?...", confirmed: true)
-Question.create(content: "Konkretnie, to o co chodzi?...", confirmed: true)
-Question.create(content: "Możesz jasniej...", confirmed: true)
-Question.create(content: "Ty już dobrze wiesz...", confirmed: true)
-Question.create(content: "Decyduj, ja nie mam głowy do tego...", confirmed: true)
-Question.create(content: "Bez niedomówień...", confirmed: true)
-Question.create(content: "Przesadzasz...", confirmed: true)
-Question.create(content: "Jesteś potworem...", confirmed: true)
-Question.create(content: "Zmienię się dla Ciebie...", confirmed: true)
-Question.create(content: "A cóż to za pytanie?...", confirmed: true)
-Question.create(content: "Skoro tak twierdzisz...", confirmed: true)
-Question.create(content: "Boję się, że się uzaleznię od Ciebie...", confirmed: true)
-Question.create(content: "I co ja mam teraz z tym zrobić?...", confirmed: true)
-Question.create(content: "Trudno, przyszło->wyszło...", confirmed: true)
-Question.create(content: "Tak bym chciał(a) w to uwierzyć...", confirmed: true)
-Question.create(content: "Czemu Ci nie wierzę?...", confirmed: true)
-Question.create(content: "Nie wyglądasz na taką osobę...", confirmed: true)
-Question.create(content: "Rozszyfrowałeś(as) mnie...", confirmed: true)
-Question.create(content: "No i gdzie te chłopy, yeee?;)..", confirmed: true)
-Question.create(content: "Samemu trudno pofiglować...", confirmed: true)
-Question.create(content: "Nie pesz mnie!", confirmed: true)
-Question.create(content: "Musisz bombowo wyglądać w beżowym staniku.", confirmed: true)
-Question.create(content: "Twoje krzywe jedynki są super.", confirmed: true)
-Question.create(content: "Trójkąt fajna rzecz!", confirmed: true)
-Question.create(content: "Masz brud między zębami!", confirmed: true)
-Question.create(content: "Nudzisz.", confirmed: true)
-Question.create(content: "Wybacz mi.", confirmed: true)
-Question.create(content: "Wyjdę do toalety, a Ty za mną.", confirmed: true)
-Question.create(content: "O której chodzisz spać?", confirmed: true)
-Question.create(content: "Z kurami.", confirmed: true)
-Question.create(content: "Jak już słoće wstanie.", confirmed: true)
-Question.create(content: "Czuję się jak naćpana(y).", confirmed: true)
-Question.create(content: "Fantazjujesz.", confirmed: true)
-Question.create(content: "Halo, tu jestem!", confirmed: true)
-Question.create(content: "Ładna buzia.", confirmed: true)
-Question.create(content: "Może o północy?", confirmed: true)
-Question.create(content: "Miewasz sny erotyczne?", confirmed: true)
-Question.create(content: "Nigdy więcej mnie o to nie pytaj.", confirmed: true)
-Question.create(content: "Masz zgrabny nos.", confirmed: true)
-Question.create(content: "Niezła z Ciebie szprotka.", confirmed: true)
-Question.create(content: "Wyglądasz słodko.", confirmed: true)
-Question.create(content: "Wino szumi mi w głowie.", confirmed: true)
-Question.create(content: "Lubię takich(e)!", confirmed: true)
-Question.create(content: "Czym się interesujesz?", confirmed: true)
-Question.create(content: "Szydełkowaniem.", confirmed: true)
-Question.create(content: "Lubisz przeklinać.", confirmed: true)
-Question.create(content: "Nie, tylko czasami.", confirmed: true)
-Question.create(content: "Nie wstydź się!", confirmed: true)
-Question.create(content: "Gdzie Ci mężczyźni wspaniali tacy?", confirmed: true)
-Question.create(content: "Poszli do pracy.", confirmed: true)
-Question.create(content: "No i co z tego.", confirmed: true)
-Question.create(content: "Lubię niegrzecznych chłopców.", confirmed: true)
-Question.create(content: "Lubisz się całować?", confirmed: true)
-Question.create(content: "Nie lubię Cię!", confirmed: true)
-Question.create(content: "Ładnie wyglądasz.", confirmed: true)
-Question.create(content: "Masz zgrabne nogi.", confirmed: true)
-Question.create(content: "Nie tutaj.", confirmed: true)
-Question.create(content: "Masz ładne łydki.", confirmed: true)
-Question.create(content: "Pewnie jesteś miły(a) w dotyku.", confirmed: true)
-Question.create(content: "Ładna pogoda.", confirmed: true)
-Question.create(content: "Tylko z Tobą.", confirmed: true)
-Question.create(content: "Czytasz książki?", confirmed: true)
-Question.create(content: "Jestem tolerancyjny(a)", confirmed: true)
-Question.create(content: "Co robisz wieczorem?", confirmed: true)
-Question.create(content: "Piekę babeczki.", confirmed: true)
-Question.create(content: "Masz idealną figurę.", confirmed: true)
-Question.create(content: "Lubisz mnie?", confirmed: true)
-Question.create(content: "Kocham dzieci.", confirmed: true)
-Question.create(content: "Zabijasz mnie tym wzrokiem!", confirmed: true)
-Question.create(content: "Nie oprzesz mi się.", confirmed: true)
-Question.create(content: "Ale masz kolanko.", confirmed: true)
-Question.create(content: "Ledwo to przeżyłam(em)", confirmed: true)
-Question.create(content: "Stop!", confirmed: true)
-Question.create(content: "Na zawsze!", confirmed: true)
-Question.create(content: "Masz piękne włosy!", confirmed: true)
-Question.create(content: "Kocham niespodzianki!", confirmed: true)
-Question.create(content: "Tak jak Ty.", confirmed: true)
-Question.create(content: "Nie kuś.", confirmed: true)
-Question.create(content: "Mam ochotę Cię ugryść.", confirmed: true)
-Question.create(content: "Szkoda.", confirmed: true)
-Question.create(content: "Posyłam Ci całuski w policzek.", confirmed: true)
-Question.create(content: "Co za mini!", confirmed: true)
-Question.create(content: "Czemu mnie nie lubisz?", confirmed: true)
-Question.create(content: "Robisz wrażenie!", confirmed: true)
-Question.create(content: "Domyśl się.", confirmed: true)
-Question.create(content: "Trudno, co zrobić.", confirmed: true)
-Question.create(content: "Wkurzasz mnie.", confirmed: true)
-Question.create(content: "Jesteś szczery(a).", confirmed: true)
-Question.create(content: "Na pewno nie.", confirmed: true)
-Question.create(content: "Nie brzęcz!", confirmed: true)
-Question.create(content: "Przecież Cię znam.", confirmed: true)
-Question.create(content: "O czym marzysz?", confirmed: true)
-Question.create(content: "O śnie.", confirmed: true)
-Question.create(content: "Nie chuchaj na mnie!", confirmed: true)
-
-
-
+User.create!([
+  {email: "admin@admin.pl", encrypted_password: "$2a$10$IUY4zPZK3IMUzZxVWAahMO2lWGd33SBptt6uZbBpwvDUW38X2oJi.", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, auth_token: "B1QMGbXMKUw9W1y69Px2", login: "admin", admin: true},
+  {email: "impresyjna@gmail12355.com", encrypted_password: "$2a$10$6ok7OqEXR.4OdmstnLD7xeDfBXNHAxmSrIfMAcEwAumn6U9FUPWE6", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 64, current_sign_in_at: "2016-06-13 12:05:02", last_sign_in_at: "2016-06-12 17:47:37", current_sign_in_ip: "127.0.0.1", last_sign_in_ip: "127.0.0.1", auth_token: "mHsTCtDLYACVNY6zVbG3", login: "impresyjna", admin: false},
+  {email: "wampir@wampir.pl", encrypted_password: "$2a$10$4fM3KM/375unKtZHiHzEqeh1lHSKPJ22qR0fsye6PnHzWlVVz1FyO", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, auth_token: "mxpj-5UosCgYiZs9TNvC", login: "wampir", admin: false},
+  {email: "qw@wert.pl", encrypted_password: "$2a$10$w000h9kjXtsS1tYIc/Bexe3PtTM.z3LBUdX0pZnpzWZqxnIDsgaHO", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, auth_token: "SwRCDRV2j81X7s8Dnhps", login: "qwert", admin: false},
+  {email: "asdf@asdf.pl", encrypted_password: "$2a$10$39ekSJQhRA222sqkMY.m5.N/AppUruvs5vUbc8PTH5qRPSPKKCPui", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, auth_token: "vBQXVzX-aAFbH4JcQxeQ", login: "rest", admin: false},
+  {email: "asdfgh@as.pl", encrypted_password: "$2a$10$NzVjhJgpLl.jC.56uTd6uOA8vfTHzHTw.MOuJXi3A/nRy.MAW4BDy", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, auth_token: "w-zzthNotwpBQQ8khZqo", login: "qwerty1", admin: false},
+  {email: "impresyjna1@wp.pl", encrypted_password: "$2a$10$FjCXRB7x7NGp.yo7OLmWAufTn/pAWH3d7NgwPTwa5udHHxKx2nbka", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, auth_token: "MvJLLb2xDYnQZuCzrQBR", login: "impresyjna11", admin: false},
+  {email: "test@test.pl", encrypted_password: "$2a$10$EJuhjjSkLTS/L16xKbSGoe/Nx27woiDh3HFykxYZpxB7RmKKfEWPu", reset_password_token: nil, reset_password_sent_at: nil, remember_created_at: nil, sign_in_count: 0, current_sign_in_at: nil, last_sign_in_at: nil, current_sign_in_ip: nil, last_sign_in_ip: nil, auth_token: "7HxhHdmjf5FBVPy4fGz6", login: "Test", admin: false}
+])
+Card.create!([
+  {category_id: 1},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 2},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 1},
+  {category_id: 1},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 2},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 1},
+  {category_id: 1},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 3},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 2},
+  {category_id: 1},
+  {category_id: 1},
+  {category_id: 3},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 3},
+  {category_id: 2},
+  {category_id: 1},
+  {category_id: 2},
+  {category_id: 2},
+  {category_id: 1}
+])
+Category.create!([
+  {name: "Przyjacielskie"},
+  {name: "Erotyczne"},
+  {name: "Delikatny flirt"}
+])
+Friendship.create!([
+  {user_id: 4, friend_id: "10", int: nil}
+])
+Question.create!([
+  {content: "Masz w sobie dziki magnetyzm!", category_id: nil, confirmed: true},
+  {content: "Co robisz?", category_id: nil, confirmed: true},
+  {content: "Na Twoim punkcie.", category_id: nil, confirmed: true},
+  {content: "Myślisz o mnie trochę?", category_id: nil, confirmed: true},
+  {content: "Nie mogę.", category_id: nil, confirmed: true},
+  {content: "Pokaż języczek.", category_id: nil, confirmed: true},
+  {content: "Pięknie wyglądasz w bieliźnie.", category_id: nil, confirmed: true},
+  {content: "Zostań ze mną na jedną noc?!", category_id: nil, confirmed: true},
+  {content: "Wiesz czego chcesz.", category_id: nil, confirmed: true},
+  {content: "Może wyjdziemy?", category_id: nil, confirmed: true},
+  {content: "Śpię bez piżamy.", category_id: nil, confirmed: true},
+  {content: "Cierpisz na bezsenność.", category_id: nil, confirmed: true},
+  {content: "Medyka!", category_id: nil, confirmed: true},
+  {content: "Wyluzuj się.", category_id: nil, confirmed: true},
+  {content: "Tego już za wiele.", category_id: nil, confirmed: true},
+  {content: "Puść mi oczko.", category_id: nil, confirmed: true},
+  {content: "Gra fajna rzecz!", category_id: nil, confirmed: true},
+  {content: "Lubię grzeczne dziewczynki.", category_id: nil, confirmed: true},
+  {content: "Jesteś moim błędny rycerzem!", category_id: nil, confirmed: true},
+  {content: "Podnieca mnie twój biust", category_id: nil, confirmed: true},
+  {content: "Nie za późno?", category_id: nil, confirmed: true},
+  {content: "Niespodzianka!", category_id: nil, confirmed: true},
+  {content: "Najlepiej w nocy!", category_id: nil, confirmed: true},
+  {content: "Lubisz zwierzęta?", category_id: nil, confirmed: true},
+  {content: "Doprowadzasz mnie do rozpaczy", category_id: nil, confirmed: true},
+  {content: "Proszę oto walentynkowy bukiet.", category_id: nil, confirmed: true},
+  {content: "Masz długi miecz.", category_id: nil, confirmed: true},
+  {content: "Może pójdziemy pograć?", category_id: nil, confirmed: true},
+  {content: "Tylko twarde.", category_id: nil, confirmed: true},
+  {content: "Umyj zęby.", category_id: nil, confirmed: true},
+  {content: "Ale ciacho!", category_id: nil, confirmed: true},
+  {content: "Czuję się jak niewolnik na galerze.", category_id: nil, confirmed: true},
+  {content: "Namiętnie.", category_id: nil, confirmed: true},
+  {content: "Odrobię Ci łapy!", category_id: nil, confirmed: true},
+  {content: "Pomóc Ci?", category_id: nil, confirmed: true},
+  {content: "Podniecają mnie blondyni(ki)!", category_id: nil, confirmed: true},
+  {content: "O Ty brzydalu.", category_id: nil, confirmed: true},
+  {content: "Seksownie się uśmiechasz.", category_id: nil, confirmed: true},
+  {content: "Nie obrażaj mnie!", category_id: nil, confirmed: true},
+  {content: "Znam przepis na shuizhu roupian.", category_id: nil, confirmed: true},
+  {content: "Wrrrrrr.... masz bicz wampa?", category_id: nil, confirmed: true},
+  {content: "Zwolnij nie tak szybko!", category_id: nil, confirmed: true},
+  {content: "Brak Ci pomysłów.", category_id: nil, confirmed: true},
+  {content: "Ale tekst!", category_id: nil, confirmed: true},
+  {content: "Nie lubię brunetów(ek)!", category_id: nil, confirmed: true},
+  {content: "Pójdziesz ze mną do lasu?", category_id: nil, confirmed: true},
+  {content: "Hipnotyzujesz mnie.", category_id: nil, confirmed: true},
+  {content: "Czy mogę być Twoim Kamratem?", category_id: nil, confirmed: true},
+  {content: "Jesteś nachalny(a)!", category_id: nil, confirmed: true},
+  {content: "Prześladujesz mnie!", category_id: nil, confirmed: true},
+  {content: "Uduchawiasz mnie.", category_id: nil, confirmed: true},
+  {content: "Masz talię osy?!", category_id: nil, confirmed: true},
+  {content: "Nie papuguj.", category_id: nil, confirmed: true},
+  {content: "Masz seksowne rzęsy.", category_id: nil, confirmed: true},
+  {content: "Będziesz moim medykiem?", category_id: nil, confirmed: true},
+  {content: "Wolę osoby w innym typie!", category_id: nil, confirmed: true},
+  {content: "Z Tobą zawsze i wszędzie.", category_id: nil, confirmed: true},
+  {content: "Czy jesteś tolerancyjny(a)?", category_id: nil, confirmed: true},
+  {content: "Wolę brunetki(ów)", category_id: nil, confirmed: true},
+  {content: "We mnie!", category_id: nil, confirmed: true},
+  {content: "Ktoś mi dodał do napoju jagód odurzających.", category_id: nil, confirmed: true},
+  {content: "Czemu mnie nie zauważasz?", category_id: nil, confirmed: true},
+  {content: "Człowiek, człowiekowi nie jest równy.", category_id: nil, confirmed: true},
+  {content: "Popłyniemy razem łódką na Sicz?", category_id: nil, confirmed: true},
+  {content: "Co za uśmiech.", category_id: nil, confirmed: true},
+  {content: "Podłożyłem Ci bombę pieprzową!", category_id: nil, confirmed: true},
+  {content: "Wolę to drugie.", category_id: nil, confirmed: true},
+  {content: "Niestety nie.", category_id: nil, confirmed: true},
+  {content: "Wyglądasz bardzo staro.", category_id: nil, confirmed: true},
+  {content: "Nie teraz.", category_id: nil, confirmed: true},
+  {content: "Tak.", category_id: nil, confirmed: true},
+  {content: "Rzuciłeś na mnie urok.", category_id: nil, confirmed: true},
+  {content: "Lubisz herbaciany wywar?", category_id: nil, confirmed: true},
+  {content: "Lubię niewyżytych(e)!", category_id: nil, confirmed: true},
+  {content: "Miło się z Tobą rozmawia!", category_id: nil, confirmed: true},
+  {content: "Podniecają mnie bruneci(tki)!", category_id: nil, confirmed: true},
+  {content: "Szukam rycerza(ki) na noc!", category_id: nil, confirmed: true},
+  {content: "Szaleję za Tobą!", category_id: nil, confirmed: true},
+  {content: "Umyj zęby jak do mnie mówisz.", category_id: nil, confirmed: true},
+  {content: "Twój miecz jest jedno czy dwuręczny?", category_id: nil, confirmed: true},
+  {content: "My razem?!", category_id: nil, confirmed: true},
+  {content: "Podobno z nami jest Kozak?", category_id: nil, confirmed: true},
+  {content: "Razem czy osobno?", category_id: nil, confirmed: true},
+  {content: "Zabójczo na mnie patrzysz!", category_id: nil, confirmed: true},
+  {content: "Może poflirtujemy?", category_id: nil, confirmed: true},
+  {content: "Oddaje Ci swoje serce.", category_id: nil, confirmed: true},
+  {content: "Wyglądasz jak tygrys(ica)!", category_id: nil, confirmed: true},
+  {content: "Zejdź ze mnie.", category_id: nil, confirmed: true},
+  {content: "Spotkajmy się jutro sami.", category_id: nil, confirmed: true},
+  {content: "Może jutro?", category_id: nil, confirmed: true},
+  {content: "Nuda.", category_id: nil, confirmed: true},
+  {content: "Lubię panów z brzuszkiem.", category_id: nil, confirmed: true},
+  {content: "Pokaż więcej.", category_id: nil, confirmed: true},
+  {content: "Chyba się zakochałem(am).", category_id: nil, confirmed: true},
+  {content: "Dużo jesz?", category_id: nil, confirmed: true},
+  {content: "Daj całusa!", category_id: nil, confirmed: true},
+  {content: "Lubisz pozować do zdjęć?", category_id: nil, confirmed: true},
+  {content: "Ależ owszem czemu nie, Tobie też należy się!", category_id: nil, confirmed: true},
+  {content: "Pokaż się z innej strony.", category_id: nil, confirmed: true},
+  {content: "W co?", category_id: nil, confirmed: true},
+  {content: "Fajna z Ciebie laska!", category_id: nil, confirmed: true},
+  {content: "Fajny z Ciebie gość!", category_id: nil, confirmed: true},
+  {content: "Zaopiekuję się Tobą!", category_id: nil, confirmed: true},
+  {content: "Ze mną?", category_id: nil, confirmed: true},
+  {content: "Zostań moim aniołem!", category_id: nil, confirmed: true},
+  {content: "Wyglądasz bardzo dojrzale.", category_id: nil, confirmed: true},
+  {content: "Też tak uważam.", category_id: nil, confirmed: true},
+  {content: "Kocham kwiaty!", category_id: nil, confirmed: true},
+  {content: "Wiem, że masz ochotę.", category_id: nil, confirmed: true},
+  {content: "Twój widok doprowadza nie do ekstazy.", category_id: nil, confirmed: true},
+  {content: "Nigdy z Tobą!", category_id: nil, confirmed: true},
+  {content: "Żółty kwiat to zdrada.", category_id: nil, confirmed: true},
+  {content: "Nago?", category_id: nil, confirmed: true},
+  {content: "Wyjdź zaraz po mnie.", category_id: nil, confirmed: true},
+  {content: "Siebie!", category_id: nil, confirmed: true},
+  {content: "Masz ochotę?", category_id: nil, confirmed: true},
+  {content: "Ty też jesteś opryskliwy(a)?!", category_id: nil, confirmed: true},
+  {content: "Może innym razem.", category_id: nil, confirmed: true},
+  {content: "Powtarzasz się.", category_id: nil, confirmed: true},
+  {content: "Muszę się odmłodzić.", category_id: nil, confirmed: true},
+  {content: "Pokaż mi jak to się robi.", category_id: nil, confirmed: true},
+  {content: "Z Tobą!", category_id: nil, confirmed: true},
+  {content: "Jesteś dla mnie za stary(a)", category_id: nil, confirmed: true},
+  {content: "Jesteś taka(i) piękna(y)!", category_id: nil, confirmed: true},
+  {content: "Przykro mi.", category_id: nil, confirmed: true},
+  {content: "Czemu się rumienisz?", category_id: nil, confirmed: true},
+  {content: "Ty mi też!", category_id: nil, confirmed: true},
+  {content: "Ok!", category_id: nil, confirmed: true},
+  {content: "Mam kluczyk do twego serca!", category_id: nil, confirmed: true},
+  {content: "Nigdy.", category_id: nil, confirmed: true},
+  {content: "Bądź oryginalny(a).", category_id: nil, confirmed: true},
+  {content: "Wydaje Ci się.", category_id: nil, confirmed: true},
+  {content: "Nu! Nu! Nu!", category_id: nil, confirmed: true},
+  {content: "Pogramy w butelkę.", category_id: nil, confirmed: true},
+  {content: "Często to robisz?", category_id: nil, confirmed: true},
+  {content: "Odejdź!", category_id: nil, confirmed: true},
+  {content: "Chyba stwardniały Ci brodawki.", category_id: nil, confirmed: true},
+  {content: "Dziękuję.", category_id: nil, confirmed: true},
+  {content: "Czy mogę wypić z Tobą toast?", category_id: nil, confirmed: true},
+  {content: "Nie odważysz się...", category_id: nil, confirmed: true},
+  {content: "Mogę zajrzeć w Twój dekolt?", category_id: nil, confirmed: true},
+  {content: "Bara... bara...", category_id: nil, confirmed: true},
+  {content: "Fajna rzecz.", category_id: nil, confirmed: true},
+  {content: "Lubię maki.", category_id: nil, confirmed: true},
+  {content: "Masz piękne imię.", category_id: nil, confirmed: true},
+  {content: "Oczko Ci leci.", category_id: nil, confirmed: true},
+  {content: "Rozpalasz mnie jak ognień grecki!", category_id: nil, confirmed: true},
+  {content: "Może teatr?", category_id: nil, confirmed: true},
+  {content: "Chyba się mnie nie wstydzisz!", category_id: nil, confirmed: true},
+  {content: "Zostań moim błędnym rycerzem!", category_id: nil, confirmed: true},
+  {content: "Nigdy więcej.", category_id: nil, confirmed: true},
+  {content: "Co pijesz?", category_id: nil, confirmed: true},
+  {content: "Sok.", category_id: nil, confirmed: true},
+  {content: "Lemoniadę.", category_id: nil, confirmed: true},
+  {content: "Gin z tonikiem. Wstrząśnięty, niemieszany.", category_id: nil, confirmed: true},
+  {content: "Onieśmielasz mnie.", category_id: nil, confirmed: true},
+  {content: "Robisz zdjęcia?", category_id: nil, confirmed: true},
+  {content: "Całuski ślę!", category_id: nil, confirmed: true},
+  {content: "Dlaczego?", category_id: nil, confirmed: true},
+  {content: "Zmieńmy temat.", category_id: nil, confirmed: true},
+  {content: "To nie ma nic do rzeczy.", category_id: nil, confirmed: true},
+  {content: "Szpieg!", category_id: nil, confirmed: true},
+  {content: "Daj mordy!", category_id: nil, confirmed: true},
+  {content: "Masz kuszacy wzrok.", category_id: nil, confirmed: true},
+  {content: "Podniecają mnie twoje usta!", category_id: nil, confirmed: true},
+  {content: "Jesteś delikatny(a) jak kwiat lotosu.", category_id: nil, confirmed: true},
+  {content: "Nie musisz mnie jeść.", category_id: nil, confirmed: true},
+  {content: "Peszę Cię?", category_id: nil, confirmed: true},
+  {content: "Jesteś moją damą serca!", category_id: nil, confirmed: true},
+  {content: "Ponętnie spoglądasz.", category_id: nil, confirmed: true},
+  {content: "Bądź grzeczny(a).", category_id: nil, confirmed: true},
+  {content: "Nie broń się!", category_id: nil, confirmed: true},
+  {content: "O Tobie.", category_id: nil, confirmed: true},
+  {content: "Granatowa pościel z jedwabiu. My?", category_id: nil, confirmed: true},
+  {content: "Pociągasz mnie!", category_id: nil, confirmed: true},
+  {content: "A Ty?", category_id: nil, confirmed: true},
+  {content: "Zostan moją Panią!", category_id: nil, confirmed: true},
+  {content: "Chce mi się spać.", category_id: nil, confirmed: true},
+  {content: "Chodźmy do pomieszczenia obok.", category_id: nil, confirmed: true},
+  {content: "Nie spodziewałam(em) się tego po Tobie!", category_id: nil, confirmed: true},
+  {content: "Zwariowałaś(eś)", category_id: nil, confirmed: true},
+  {content: "Nie oszukuj!", category_id: nil, confirmed: true},
+  {content: "Z wrażenia zrobiło mi się gorąco!", category_id: nil, confirmed: true},
+  {content: "Jestem groźną amazanką!", category_id: nil, confirmed: true},
+  {content: "Gdzie?", category_id: nil, confirmed: true},
+  {content: "Bardzo chętnie!", category_id: nil, confirmed: true},
+  {content: "Miły wieczór.", category_id: nil, confirmed: true},
+  {content: "Kochanie, pozdrawiam.", category_id: nil, confirmed: true},
+  {content: "Śpię bez bielizny.", category_id: nil, confirmed: true},
+  {content: "Na pewno nie Tobie!", category_id: nil, confirmed: true},
+  {content: "Interesuje Cię to?", category_id: nil, confirmed: true},
+  {content: "Przecież Cię nie znam.", category_id: nil, confirmed: true},
+  {content: "Ach te wargi.", category_id: nil, confirmed: true},
+  {content: "Chodzisz mi po piętach.", category_id: nil, confirmed: true},
+  {content: "Porwę Cię dla okupu!", category_id: nil, confirmed: true},
+  {content: "Nie jesteś w moim typie.", category_id: nil, confirmed: true},
+  {content: "Lubię niegrzeczne dziewczyny.", category_id: nil, confirmed: true},
+  {content: "Lubisz chłopaków?", category_id: nil, confirmed: true},
+  {content: "Co Ty ode mnie chcesz?", category_id: nil, confirmed: true},
+  {content: "O nas!", category_id: nil, confirmed: true},
+  {content: "Ja na górze, Ty na dole?", category_id: nil, confirmed: true},
+  {content: "Nie marudź.", category_id: nil, confirmed: true},
+  {content: "Jak na lato!", category_id: nil, confirmed: true},
+  {content: "No to Ci pomogę.", category_id: nil, confirmed: true},
+  {content: "Chętnie bym Cię schrupał(a)!", category_id: nil, confirmed: true},
+  {content: "Wyglądasz bardzo młodo.", category_id: nil, confirmed: true},
+  {content: "Czemu nie.", category_id: nil, confirmed: true},
+  {content: "Blondyni(ki) górą!", category_id: nil, confirmed: true},
+  {content: "Do gry czy na spacer?", category_id: nil, confirmed: true},
+  {content: "I to szybko.", category_id: nil, confirmed: true},
+  {content: "Zrobisz mi zdjęcia?", category_id: nil, confirmed: true},
+  {content: "Śpię nago.", category_id: nil, confirmed: true},
+  {content: "﻿Myślał indyk o niedzieli... ", category_id: nil, confirmed: true},
+  {content: "Sam(a) bym chciał(a) wiedzieć ", category_id: nil, confirmed: true},
+  {content: "Jesteś pewny(a) siebie ", category_id: nil, confirmed: true},
+  {content: "Nie rozmieniaj się na drobne ", category_id: nil, confirmed: true},
+  {content: "Pofiglujemy trochę ", category_id: nil, confirmed: true},
+  {content: "Pociągasz mnie ", category_id: nil, confirmed: true},
+  {content: "Zawsze taki(a) jestem ", category_id: nil, confirmed: true},
+  {content: "Jeśli nie chcesz mojej zguby, krokodyla daj mi luby ", category_id: nil, confirmed: true},
+  {content: "Nic nie pomoże, jeśli Ty nie pomożesz dziś miłości ", category_id: nil, confirmed: true},
+  {content: "Znajdź sobie inny obiekt ", category_id: nil, confirmed: true},
+  {content: "Nie patrz tak na mnie, bo mi kurzajka wyskoczy ", category_id: nil, confirmed: true},
+  {content: "Nie dokazuj miły(a), nie dokazuj ", category_id: nil, confirmed: true},
+  {content: "W grudniu po południu ", category_id: nil, confirmed: true},
+  {content: "Porwę cię ", category_id: nil, confirmed: true},
+  {content: "Denerwujesz mnie ", category_id: nil, confirmed: true},
+  {content: "Zapraszam na lody ", category_id: nil, confirmed: true},
+  {content: "Nie obiecuj, nie obiecuj!", category_id: nil, confirmed: true},
+  {content: "Co mi zrobisz jak mnie złapiesz...", category_id: nil, confirmed: true},
+  {content: "Gdyby jutra nie było, to...", category_id: nil, confirmed: true},
+  {content: "Oj,kusisz mnie...", category_id: nil, confirmed: true},
+  {content: "Jestem gotowa(y) na...", category_id: nil, confirmed: true},
+  {content: "Powiedz tylko słowo, a...", category_id: nil, confirmed: true},
+  {content: "Mam ochotę na...", category_id: nil, confirmed: true},
+  {content: "Czuję, że...", category_id: nil, confirmed: true},
+  {content: "Drżę na myśl...", category_id: nil, confirmed: true},
+  {content: "Być może, być może...", category_id: nil, confirmed: true},
+  {content: "Nie bądź taki(a) mądry(a)..", category_id: nil, confirmed: true},
+  {content: "Uważaj...", category_id: nil, confirmed: true},
+  {content: "A nie za dużo byś chciał(a)...", category_id: nil, confirmed: true},
+  {content: "Nie umiem Ci odmówić...", category_id: nil, confirmed: true},
+  {content: "Nic nie widzę, nic nie słyszę...", category_id: nil, confirmed: true},
+  {content: "Z Tobą zawsze i wszędzie...", category_id: nil, confirmed: true},
+  {content: "Jesteś dla mnie jak cukierek, aż boję się rozwinąć...", category_id: nil, confirmed: true},
+  {content: "Odpuść sobie lepiej...", category_id: nil, confirmed: true},
+  {content: "Naprawdę??...", category_id: nil, confirmed: true},
+  {content: "Proszę Cię, nie rozśmieszaj mnie...", category_id: nil, confirmed: true},
+  {content: "Czy to aby nie zazdrość?", category_id: nil, confirmed: true},
+  {content: "Szkoda, że nie spotkaliśmy się wcześniej, booo...", category_id: nil, confirmed: true},
+  {content: "Przeszył mnie dreszcz emocji...", category_id: nil, confirmed: true},
+  {content: "Przestań!...", category_id: nil, confirmed: true},
+  {content: "Jak by tak....", category_id: nil, confirmed: true},
+  {content: "A może zgrzeszymy jednak...", category_id: nil, confirmed: true},
+  {content: "Nie mogę....", category_id: nil, confirmed: true},
+  {content: "A może buziaka na zgodę?...", category_id: nil, confirmed: true},
+  {content: "Sprawiasz mi przykrość...", category_id: nil, confirmed: true},
+  {content: "Nie mów tak...", category_id: nil, confirmed: true},
+  {content: "Przepraszam...", category_id: nil, confirmed: true},
+  {content: "A może jednak...", category_id: nil, confirmed: true},
+  {content: "Śniłaś(eś) mi się...", category_id: nil, confirmed: true},
+  {content: "No cóż, każda potwora znajdzie swego amatora...", category_id: nil, confirmed: true},
+  {content: "Bo do tanga trzeba dwojga...", category_id: nil, confirmed: true},
+  {content: "Myślę o Tobie...", category_id: nil, confirmed: true},
+  {content: "Chyba nic z tego...", category_id: nil, confirmed: true},
+  {content: "Dajmy sobie szansę...", category_id: nil, confirmed: true},
+  {content: "Nie, dziękuję...", category_id: nil, confirmed: true},
+  {content: "Jestem tu i teraz...", category_id: nil, confirmed: true},
+  {content: "Porozmawiamy o tym jutro...", category_id: nil, confirmed: true},
+  {content: "Muszę to przemyśleć...", category_id: nil, confirmed: true},
+  {content: "Nic już nie wiem...", category_id: nil, confirmed: true},
+  {content: "I tak nic nie upolujesz...", category_id: nil, confirmed: true},
+  {content: "Nie wysilaj się...", category_id: nil, confirmed: true},
+  {content: "Nie wycofuj się teraz...", category_id: nil, confirmed: true},
+  {content: "Rzucam oficjalnie fochem...", category_id: nil, confirmed: true},
+  {content: "Pa pa...", category_id: nil, confirmed: true},
+  {content: "Było miło, ale się skończyło...", category_id: nil, confirmed: true},
+  {content: "Tak bym chciał(a) spotkać się...", category_id: nil, confirmed: true},
+  {content: "Nie mogę dać Ci tego...", category_id: nil, confirmed: true},
+  {content: "Muszę odmówić...", category_id: nil, confirmed: true},
+  {content: "Jestem za a nawet przeciw...", category_id: nil, confirmed: true},
+  {content: "Gorąco mi....", category_id: nil, confirmed: true},
+  {content: "Za szybko, za szybko...", category_id: nil, confirmed: true},
+  {content: "Napiszę wiersz dla Ciebie...", category_id: nil, confirmed: true},
+  {content: "Za dużo słów, za mało czynów...", category_id: nil, confirmed: true},
+  {content: "A gdybym zaprosił (a) Ciebie na kawę...", category_id: nil, confirmed: true},
+  {content: "A może na piwo skoczymy...", category_id: nil, confirmed: true},
+  {content: "Lubisz mnie choć troszkę...", category_id: nil, confirmed: true},
+  {content: "Mów prawdę!:)...", category_id: nil, confirmed: true},
+  {content: "Nie wierzę Ci jakoś...", category_id: nil, confirmed: true},
+  {content: "Będziesz jutro?...", category_id: nil, confirmed: true},
+  {content: "To chociaż do kina?...", category_id: nil, confirmed: true},
+  {content: "Nic nie rozumiem...", category_id: nil, confirmed: true},
+  {content: "Muszę lecieć...", category_id: nil, confirmed: true},
+  {content: "Jutro tez jest dzień...", category_id: nil, confirmed: true},
+  {content: "Zastanowię się...", category_id: nil, confirmed: true},
+  {content: "Ciężka sprawa...", category_id: nil, confirmed: true},
+  {content: "Bardzo mnie to martwi...", category_id: nil, confirmed: true},
+  {content: "Dziękuję...", category_id: nil, confirmed: true},
+  {content: "Jesteśmy jak dwie połówki jabłka...", category_id: nil, confirmed: true},
+  {content: "Zdecyduj się...", category_id: nil, confirmed: true},
+  {content: "Nie chcę kłopotów...", category_id: nil, confirmed: true},
+  {content: "Dyplomata(ka)..", category_id: nil, confirmed: true},
+  {content: "Dogadamy się jakoś..", category_id: nil, confirmed: true},
+  {content: "Aleś Pan(i) niecierpliwy(a)...", category_id: nil, confirmed: true},
+  {content: "Fajnie mi z Tobą...", category_id: nil, confirmed: true},
+  {content: "I co teraz?...", category_id: nil, confirmed: true},
+  {content: "A choć cień nadziei?...", category_id: nil, confirmed: true},
+  {content: "Zrobię co zechcesz, ale powiedz tak...", category_id: nil, confirmed: true},
+  {content: "Zgadnij...", category_id: nil, confirmed: true},
+  {content: "Do jutra podejmę decyzję...", category_id: nil, confirmed: true},
+  {content: "Zapraszam na przejażdżkę...", category_id: nil, confirmed: true},
+  {content: "A może urządzimy grilla?...", category_id: nil, confirmed: true},
+  {content: "Sknera...", category_id: nil, confirmed: true},
+  {content: "Flirciarz(ra) zawodowy(a)...", category_id: nil, confirmed: true},
+  {content: "Buziak na dobranoc...", category_id: nil, confirmed: true},
+  {content: "Bo przyjaciołom się UFO...", category_id: nil, confirmed: true},
+  {content: "Dajesz mi inspirację...", category_id: nil, confirmed: true},
+  {content: "Cieszę się, że Cię poznałam(em)...", category_id: nil, confirmed: true},
+  {content: "Mam pewien z tym kłopot...", category_id: nil, confirmed: true},
+  {content: "Pomożesz mi...", category_id: nil, confirmed: true},
+  {content: "I już Cię lubię za to...", category_id: nil, confirmed: true},
+  {content: "No cóż, wszędzie mnie pełno...", category_id: nil, confirmed: true},
+  {content: "Nie obawiaj się mnie...", category_id: nil, confirmed: true},
+  {content: "Krzywdy z mojej strony nie zaznasz...", category_id: nil, confirmed: true},
+  {content: "Może kolacyjka...", category_id: nil, confirmed: true},
+  {content: "Bądźmy szczerzy...", category_id: nil, confirmed: true},
+  {content: "Co dwie głowy to nie jedna...", category_id: nil, confirmed: true},
+  {content: "Płyń po morzach i oceanach...", category_id: nil, confirmed: true},
+  {content: "Generalnie może być...", category_id: nil, confirmed: true},
+  {content: "Wyszło, że musze się zgodzić z Tobą...", category_id: nil, confirmed: true},
+  {content: "Pożyjemy, zobaczymy...", category_id: nil, confirmed: true},
+  {content: "To co z tym buziakiem?...", category_id: nil, confirmed: true},
+  {content: "Namyśliłeś(aś) się?...", category_id: nil, confirmed: true},
+  {content: "Porozmawiamy o tym?...", category_id: nil, confirmed: true},
+  {content: "No, nie jest dobrze...", category_id: nil, confirmed: true},
+  {content: "Mamy czas...", category_id: nil, confirmed: true},
+  {content: "A co się stało?...", category_id: nil, confirmed: true},
+  {content: "Jeśli będzie Ci źle, możesz na mnie liczyć...", category_id: nil, confirmed: true},
+  {content: "Pojedźmy gdzieś...", category_id: nil, confirmed: true},
+  {content: "A jesteś przekupny(a)?...", category_id: nil, confirmed: true},
+  {content: "Gdziekolwiek Ty, tam i ja...", category_id: nil, confirmed: true},
+  {content: "Czuję Twój oddech za sobą...", category_id: nil, confirmed: true},
+  {content: "Twój uśmiech mnie powala...", category_id: nil, confirmed: true},
+  {content: "Daj mi słowo, proszę...", category_id: nil, confirmed: true},
+  {content: "Jestem już Twój(oja)...", category_id: nil, confirmed: true},
+  {content: "Żartowniś(nisia)...", category_id: nil, confirmed: true},
+  {content: "I vice versa:)...", category_id: nil, confirmed: true},
+  {content: "Ktoś tu pracuje na dwa fronty...:)", category_id: nil, confirmed: true},
+  {content: "Zasady są jasne...", category_id: nil, confirmed: true},
+  {content: "Wybacz mi, nie chciałam(em)...", category_id: nil, confirmed: true},
+  {content: "Gdyby to było takie proste...", category_id: nil, confirmed: true},
+  {content: "Trzeba tylko mocno chcieć...", category_id: nil, confirmed: true},
+  {content: "Wróżka, normalnie...", category_id: nil, confirmed: true},
+  {content: "Ale ja tak bardzo chcę...", category_id: nil, confirmed: true},
+  {content: "Rozważ to raz jeszcze, proszę...", category_id: nil, confirmed: true},
+  {content: "Jakie to miłe...", category_id: nil, confirmed: true},
+  {content: "Skromność to moje drugie imię...", category_id: nil, confirmed: true},
+  {content: "Nieśmiały(a) jestem...", category_id: nil, confirmed: true},
+  {content: "Piękne oczy masz, komu je dasz...", category_id: nil, confirmed: true},
+  {content: "Jesteś super...", category_id: nil, confirmed: true},
+  {content: "Zaraz dam Ci sprośnego buziaka...", category_id: nil, confirmed: true},
+  {content: "Po prostu mi się podobasz, i co mam z tym zrobić...", category_id: nil, confirmed: true},
+  {content: "Niewygodny temat?...", category_id: nil, confirmed: true},
+  {content: "Damy jakoś radę...", category_id: nil, confirmed: true},
+  {content: "Powiało chłodem...", category_id: nil, confirmed: true},
+  {content: "Czuję niepokój...", category_id: nil, confirmed: true},
+  {content: "Jesteś zaborczy(a)...", category_id: nil, confirmed: true},
+  {content: "Przepraszam, to z zazdrości...", category_id: nil, confirmed: true},
+  {content: "Szkoda, że jesteś kobietą...", category_id: nil, confirmed: true},
+  {content: "Mogę zaproponować Ci tylko przyjaźń...", category_id: nil, confirmed: true},
+  {content: "Dzięki Tobie, trochę się otworzyłem(am)...", category_id: nil, confirmed: true},
+  {content: "Chętnie pokażę Ci mój świat...", category_id: nil, confirmed: true},
+  {content: "Mam ze sobą problem...", category_id: nil, confirmed: true},
+  {content: "Brakuje mi Ciebie...", category_id: nil, confirmed: true},
+  {content: "Uwielbiam te rozmowy z Tobą...", category_id: nil, confirmed: true},
+  {content: "Dlaczego akurat ja?...", category_id: nil, confirmed: true},
+  {content: "Jestem pełna(łen) wątpliwości...", category_id: nil, confirmed: true},
+  {content: "Bo tak!...", category_id: nil, confirmed: true},
+  {content: "Masz coś w sobie, co mnie do Ciebie ciągnie...", category_id: nil, confirmed: true},
+  {content: "Nie umiem tego nazwać...", category_id: nil, confirmed: true},
+  {content: "Dodajesz mi wiary w siebie...", category_id: nil, confirmed: true},
+  {content: "Cieszę się...", category_id: nil, confirmed: true},
+  {content: "Miłego dnia...", category_id: nil, confirmed: true},
+  {content: "Śnij o mnie...", category_id: nil, confirmed: true},
+  {content: "To dobrze...", category_id: nil, confirmed: true},
+  {content: "Może tak być...", category_id: nil, confirmed: true},
+  {content: "Niezupełnie rozumiem...", category_id: nil, confirmed: true},
+  {content: "Mam doła..", category_id: nil, confirmed: true},
+  {content: "Rozweselić Cię...", category_id: nil, confirmed: true},
+  {content: "Sklonuję Cię...", category_id: nil, confirmed: true},
+  {content: "Would you go bed with me...", category_id: nil, confirmed: true},
+  {content: "Czemu jest jak jest?...", category_id: nil, confirmed: true},
+  {content: "Zmieńmy to...", category_id: nil, confirmed: true},
+  {content: "Trudno mi się z Tobą rozstać...", category_id: nil, confirmed: true},
+  {content: "Będę płakać...", category_id: nil, confirmed: true},
+  {content: "Spadam już...", category_id: nil, confirmed: true},
+  {content: "Uwierz w siebie...", category_id: nil, confirmed: true},
+  {content: "Jesteś szalony(a)...", category_id: nil, confirmed: true},
+  {content: "Czas leci, jaka decyzja?...", category_id: nil, confirmed: true},
+  {content: "No, przecież wiesz o co mi chodzi...", category_id: nil, confirmed: true},
+  {content: "Nie generalizuj...", category_id: nil, confirmed: true},
+  {content: "Nie tłumacz się...", category_id: nil, confirmed: true},
+  {content: "Tak samo tego chcesz jak ja...", category_id: nil, confirmed: true},
+  {content: "Lubisz TO, prawda?...", category_id: nil, confirmed: true},
+  {content: "Jesteśmy tak blisko, ale jednocześnie tak daleko...", category_id: nil, confirmed: true},
+  {content: "Nie dam rady tak dalej...", category_id: nil, confirmed: true},
+  {content: "Nie poddawaj się nigdy...", category_id: nil, confirmed: true},
+  {content: "Chory(a) jestem...", category_id: nil, confirmed: true},
+  {content: "Porozmawiaj ze mną, proszę...", category_id: nil, confirmed: true},
+  {content: "Dawno Cię tu nie było...", category_id: nil, confirmed: true},
+  {content: "Czyżby koniec Bejbe?...", category_id: nil, confirmed: true},
+  {content: "Nie kłam...", category_id: nil, confirmed: true},
+  {content: "Tak mi łatwo uwierzyć w to, co mówisz...", category_id: nil, confirmed: true},
+  {content: "To nie może być prawda...", category_id: nil, confirmed: true},
+  {content: "Próbuj, próbuj...", category_id: nil, confirmed: true},
+  {content: "Myślę i myślę...", category_id: nil, confirmed: true},
+  {content: "To tylko zabawa...", category_id: nil, confirmed: true},
+  {content: "Pierwsza klasa...", category_id: nil, confirmed: true},
+  {content: "O gustach się nie dyskutuje...", category_id: nil, confirmed: true},
+  {content: "Wyjeżdżam...", category_id: nil, confirmed: true},
+  {content: "Jakieś argumenty poproszę...", category_id: nil, confirmed: true},
+  {content: "Powiedzmy, że tak i co dalej?...", category_id: nil, confirmed: true},
+  {content: "Szkoda, że tak daleko mieszkasz...", category_id: nil, confirmed: true},
+  {content: "No, ładnie się zapowiada...", category_id: nil, confirmed: true},
+  {content: "Może kubełek zimnej wody?...", category_id: nil, confirmed: true},
+  {content: "A masz 18 lat...", category_id: nil, confirmed: true},
+  {content: "Wszystkiego najlepszego...", category_id: nil, confirmed: true},
+  {content: "Okej...", category_id: nil, confirmed: true},
+  {content: "Niech i tak będzie...", category_id: nil, confirmed: true},
+  {content: "Brawo!...", category_id: nil, confirmed: true},
+  {content: "Gratuluję...", category_id: nil, confirmed: true},
+  {content: "Bywaj...", category_id: nil, confirmed: true},
+  {content: "Nie wszystko jest do d...", category_id: nil, confirmed: true},
+  {content: "Nie chce mi się...", category_id: nil, confirmed: true},
+  {content: "A jakieś dobre słowo...", category_id: nil, confirmed: true},
+  {content: "Poczekaj jeszcze chwilkę...", category_id: nil, confirmed: true},
+  {content: "Cieszę się...", category_id: nil, confirmed: true},
+  {content: "I bardzo dobrze!...", category_id: nil, confirmed: true},
+  {content: "Czemu tak rzadko tutaj bywasz?...", category_id: nil, confirmed: true},
+  {content: "Chcesz mi coś przez to powiedzieć?...", category_id: nil, confirmed: true},
+  {content: "A może jestem zbyt bezpośredni(a)?...", category_id: nil, confirmed: true},
+  {content: "Nie chciałam(em) Cię dotknąć...", category_id: nil, confirmed: true},
+  {content: "Słuchaj, myślę, że już najwyższy czas...", category_id: nil, confirmed: true},
+  {content: "Nie do końca mnie rozumiesz...", category_id: nil, confirmed: true},
+  {content: "Wróćmy do meritum...", category_id: nil, confirmed: true},
+  {content: "Przeszkadza Ci to, dlaczego?...", category_id: nil, confirmed: true},
+  {content: "A jaka różnica? ...", category_id: nil, confirmed: true},
+  {content: "Masz chwilkę dla mnie? ...", category_id: nil, confirmed: true},
+  {content: "Chętnie...", category_id: nil, confirmed: true},
+  {content: "Ale tempo...", category_id: nil, confirmed: true},
+  {content: "To ja wiem lepiej...", category_id: nil, confirmed: true},
+  {content: "I znowu swoje...", category_id: nil, confirmed: true},
+  {content: "Męczysz mnie...", category_id: nil, confirmed: true},
+  {content: "Czy Tobie trzeba dwa razy powtarzać?...", category_id: nil, confirmed: true},
+  {content: "Trochę już się niecierpliwię...", category_id: nil, confirmed: true},
+  {content: "Właściwie, po co to wszystko?...", category_id: nil, confirmed: true},
+  {content: "Masz we mnie bratnią duszę...", category_id: nil, confirmed: true},
+  {content: "Mówię absolutnie szczerze...", category_id: nil, confirmed: true},
+  {content: "A po miałbym(łabym) kręcić?...", category_id: nil, confirmed: true},
+  {content: "Czy te oczy mogą kłamać?...", category_id: nil, confirmed: true},
+  {content: "Cokolwiek to jest, niech się stanie...", category_id: nil, confirmed: true},
+  {content: "Będzie co ma być...", category_id: nil, confirmed: true},
+  {content: "Takie żarty to nie ze mną...Brunner:))...", category_id: nil, confirmed: true},
+  {content: "Tak jest!...", category_id: nil, confirmed: true},
+  {content: "To jakie dyspozycje?...", category_id: nil, confirmed: true},
+  {content: "Uważaj, co mówisz...", category_id: nil, confirmed: true},
+  {content: "Ale nie obrazisz się?...", category_id: nil, confirmed: true},
+  {content: "Jesteś czarodziejem(jką)!...", category_id: nil, confirmed: true},
+  {content: "A masz czarodziejską różdżkę przy sobie?...", category_id: nil, confirmed: true},
+  {content: "Skoro tak, to okej...", category_id: nil, confirmed: true},
+  {content: "Przekonałeś(aś) mnie...", category_id: nil, confirmed: true},
+  {content: "Nie mam nic do zaoferowania...", category_id: nil, confirmed: true},
+  {content: "Szczerze mówiąc, nie wiem...", category_id: nil, confirmed: true},
+  {content: "Po co Ci to wiedzieć?...", category_id: nil, confirmed: true},
+  {content: "A może jakaś kolacyjka?...", category_id: nil, confirmed: true},
+  {content: "A długo Cię nie będzie?...", category_id: nil, confirmed: true},
+  {content: "Wyjeżdżasz?...", category_id: nil, confirmed: true},
+  {content: "Będę tęsknić strasznie...", category_id: nil, confirmed: true},
+  {content: "Proszę bardzo...", category_id: nil, confirmed: true},
+  {content: "A idź już sobie...", category_id: nil, confirmed: true},
+  {content: "No, jak rzep normalnie...", category_id: nil, confirmed: true},
+  {content: "A to niby dlaczego?...", category_id: nil, confirmed: true},
+  {content: "Lubię kiedy tak do mnie mówisz...", category_id: nil, confirmed: true},
+  {content: "Nie czaruj mnie, bo jeszcze uwierzę...", category_id: nil, confirmed: true},
+  {content: "Jestem jak rzep...", category_id: nil, confirmed: true},
+  {content: "Daj mi szansę, proszę...", category_id: nil, confirmed: true},
+  {content: "Widać tak już musi być...", category_id: nil, confirmed: true},
+  {content: "No ani me ani be ani kukuryku...", category_id: nil, confirmed: true},
+  {content: "Błąd!...", category_id: nil, confirmed: true},
+  {content: "Chciałbym(łabym), ale boję się...", category_id: nil, confirmed: true},
+  {content: "To nie jest takie proste...", category_id: nil, confirmed: true},
+  {content: "Widzę Cię w swoich snach...", category_id: nil, confirmed: true},
+  {content: "Uwielbiam takie 'kwiatki'...", category_id: nil, confirmed: true},
+  {content: "No to masz z głowy...", category_id: nil, confirmed: true},
+  {content: "A co, a co?...", category_id: nil, confirmed: true},
+  {content: "Co tu się dzieje?...", category_id: nil, confirmed: true},
+  {content: "Nie i już...", category_id: nil, confirmed: true},
+  {content: "A co, masz inne preferencje?...", category_id: nil, confirmed: true},
+  {content: "Serce mi krwawi...", category_id: nil, confirmed: true},
+  {content: "Nie dam rady dalej...", category_id: nil, confirmed: true},
+  {content: "Puśćmy to w niepamięć, dobrze...", category_id: nil, confirmed: true},
+  {content: "Napijmy się za nas tu i teraz...", category_id: nil, confirmed: true},
+  {content: "To nie było mądre...", category_id: nil, confirmed: true},
+  {content: "Mamy problem...", category_id: nil, confirmed: true},
+  {content: "Skąd to wiesz?...", category_id: nil, confirmed: true},
+  {content: "A co to śledztwo?...", category_id: nil, confirmed: true},
+  {content: "Ale Ty dużo pytań zadajesz?...", category_id: nil, confirmed: true},
+  {content: "Pomożesz mi?...", category_id: nil, confirmed: true},
+  {content: "Jestem nieprzytomny(a)...", category_id: nil, confirmed: true},
+  {content: "Zabijasz mnie...", category_id: nil, confirmed: true},
+  {content: "Róbmy rząd i chodźmy stąd...", category_id: nil, confirmed: true},
+  {content: "Zgubiłem(am) się już...", category_id: nil, confirmed: true},
+  {content: "Pomożesz mi?...", category_id: nil, confirmed: true},
+  {content: "Brak inwencji?...", category_id: nil, confirmed: true},
+  {content: "Bądź bardziej kreatywny(a)...", category_id: nil, confirmed: true},
+  {content: "Dobra, mów...", category_id: nil, confirmed: true},
+  {content: "Trochę się spieszę...", category_id: nil, confirmed: true},
+  {content: "Za bardzo mnie poganiasz...", category_id: nil, confirmed: true},
+  {content: "Cóz...", category_id: nil, confirmed: true},
+  {content: "Kłamczuch...", category_id: nil, confirmed: true},
+  {content: "Ale mi wodę zalewaaasz..", category_id: nil, confirmed: true},
+  {content: "Wino, piwo a może po maluchu?...", category_id: nil, confirmed: true},
+  {content: "Już jestem spokojny(a)...", category_id: nil, confirmed: true},
+  {content: "Obawiasz się mnie?...", category_id: nil, confirmed: true},
+  {content: "Konkretnie, to o co chodzi?...", category_id: nil, confirmed: true},
+  {content: "Możesz jasniej...", category_id: nil, confirmed: true},
+  {content: "Ty już dobrze wiesz...", category_id: nil, confirmed: true},
+  {content: "Decyduj, ja nie mam głowy do tego...", category_id: nil, confirmed: true},
+  {content: "Bez niedomówień...", category_id: nil, confirmed: true},
+  {content: "Przesadzasz...", category_id: nil, confirmed: true},
+  {content: "Jesteś potworem...", category_id: nil, confirmed: true},
+  {content: "Zmienię się dla Ciebie...", category_id: nil, confirmed: true},
+  {content: "A cóż to za pytanie?...", category_id: nil, confirmed: true},
+  {content: "Skoro tak twierdzisz...", category_id: nil, confirmed: true},
+  {content: "Boję się, że się uzaleznię od Ciebie...", category_id: nil, confirmed: true},
+  {content: "I co ja mam teraz z tym zrobić?...", category_id: nil, confirmed: true},
+  {content: "Trudno, przyszło->wyszło...", category_id: nil, confirmed: true},
+  {content: "Tak bym chciał(a) w to uwierzyć...", category_id: nil, confirmed: true},
+  {content: "Czemu Ci nie wierzę?...", category_id: nil, confirmed: true},
+  {content: "Nie wyglądasz na taką osobę...", category_id: nil, confirmed: true},
+  {content: "Rozszyfrowałeś(as) mnie...", category_id: nil, confirmed: true},
+  {content: "No i gdzie te chłopy, yeee?;)..", category_id: nil, confirmed: true},
+  {content: "Samemu trudno pofiglować...", category_id: nil, confirmed: true},
+  {content: "Nie pesz mnie!", category_id: nil, confirmed: true},
+  {content: "Musisz bombowo wyglądać w beżowym staniku.", category_id: nil, confirmed: true},
+  {content: "Twoje krzywe jedynki są super.", category_id: nil, confirmed: true},
+  {content: "Trójkąt fajna rzecz!", category_id: nil, confirmed: true},
+  {content: "Masz brud między zębami!", category_id: nil, confirmed: true},
+  {content: "Nudzisz.", category_id: nil, confirmed: true},
+  {content: "Wybacz mi.", category_id: nil, confirmed: true},
+  {content: "Wyjdę do toalety, a Ty za mną.", category_id: nil, confirmed: true},
+  {content: "O której chodzisz spać?", category_id: nil, confirmed: true},
+  {content: "Z kurami.", category_id: nil, confirmed: true},
+  {content: "Jak już słoće wstanie.", category_id: nil, confirmed: true},
+  {content: "Czuję się jak naćpana(y).", category_id: nil, confirmed: true},
+  {content: "Fantazjujesz.", category_id: nil, confirmed: true},
+  {content: "Halo, tu jestem!", category_id: nil, confirmed: true},
+  {content: "Ładna buzia.", category_id: nil, confirmed: true},
+  {content: "Może o północy?", category_id: nil, confirmed: true},
+  {content: "Miewasz sny erotyczne?", category_id: nil, confirmed: true},
+  {content: "Nigdy więcej mnie o to nie pytaj.", category_id: nil, confirmed: true},
+  {content: "Masz zgrabny nos.", category_id: nil, confirmed: true},
+  {content: "Niezła z Ciebie szprotka.", category_id: nil, confirmed: true},
+  {content: "Wyglądasz słodko.", category_id: nil, confirmed: true},
+  {content: "Wino szumi mi w głowie.", category_id: nil, confirmed: true},
+  {content: "Lubię takich(e)!", category_id: nil, confirmed: true},
+  {content: "Czym się interesujesz?", category_id: nil, confirmed: true},
+  {content: "Szydełkowaniem.", category_id: nil, confirmed: true},
+  {content: "Lubisz przeklinać.", category_id: nil, confirmed: true},
+  {content: "Nie, tylko czasami.", category_id: nil, confirmed: true},
+  {content: "Nie wstydź się!", category_id: nil, confirmed: true},
+  {content: "Gdzie Ci mężczyźni wspaniali tacy?", category_id: nil, confirmed: true},
+  {content: "Poszli do pracy.", category_id: nil, confirmed: true},
+  {content: "No i co z tego.", category_id: nil, confirmed: true},
+  {content: "Lubię niegrzecznych chłopców.", category_id: nil, confirmed: true},
+  {content: "Lubisz się całować?", category_id: nil, confirmed: true},
+  {content: "Nie lubię Cię!", category_id: nil, confirmed: true},
+  {content: "Ładnie wyglądasz.", category_id: nil, confirmed: true},
+  {content: "Masz zgrabne nogi.", category_id: nil, confirmed: true},
+  {content: "Nie tutaj.", category_id: nil, confirmed: true},
+  {content: "Masz ładne łydki.", category_id: nil, confirmed: true},
+  {content: "Pewnie jesteś miły(a) w dotyku.", category_id: nil, confirmed: true},
+  {content: "Ładna pogoda.", category_id: nil, confirmed: true},
+  {content: "Tylko z Tobą.", category_id: nil, confirmed: true},
+  {content: "Czytasz książki?", category_id: nil, confirmed: true},
+  {content: "Jestem tolerancyjny(a)", category_id: nil, confirmed: true},
+  {content: "Co robisz wieczorem?", category_id: nil, confirmed: true},
+  {content: "Piekę babeczki.", category_id: nil, confirmed: true},
+  {content: "Masz idealną figurę.", category_id: nil, confirmed: true},
+  {content: "Lubisz mnie?", category_id: nil, confirmed: true},
+  {content: "Kocham dzieci.", category_id: nil, confirmed: true},
+  {content: "Zabijasz mnie tym wzrokiem!", category_id: nil, confirmed: true},
+  {content: "Nie oprzesz mi się.", category_id: nil, confirmed: true},
+  {content: "Ale masz kolanko.", category_id: nil, confirmed: true},
+  {content: "Ledwo to przeżyłam(em)", category_id: nil, confirmed: true},
+  {content: "Stop!", category_id: nil, confirmed: true},
+  {content: "Na zawsze!", category_id: nil, confirmed: true},
+  {content: "Masz piękne włosy!", category_id: nil, confirmed: true},
+  {content: "Kocham niespodzianki!", category_id: nil, confirmed: true},
+  {content: "Tak jak Ty.", category_id: nil, confirmed: true},
+  {content: "Nie kuś.", category_id: nil, confirmed: true},
+  {content: "Mam ochotę Cię ugryść.", category_id: nil, confirmed: true},
+  {content: "Szkoda.", category_id: nil, confirmed: true},
+  {content: "Posyłam Ci całuski w policzek.", category_id: nil, confirmed: true},
+  {content: "Co za mini!", category_id: nil, confirmed: true},
+  {content: "Czemu mnie nie lubisz?", category_id: nil, confirmed: true},
+  {content: "Robisz wrażenie!", category_id: nil, confirmed: true},
+  {content: "Domyśl się.", category_id: nil, confirmed: true},
+  {content: "Trudno, co zrobić.", category_id: nil, confirmed: true},
+  {content: "Wkurzasz mnie.", category_id: nil, confirmed: true},
+  {content: "Jesteś szczery(a).", category_id: nil, confirmed: true},
+  {content: "Na pewno nie.", category_id: nil, confirmed: true},
+  {content: "Nie brzęcz!", category_id: nil, confirmed: true},
+  {content: "Przecież Cię znam.", category_id: nil, confirmed: true},
+  {content: "O czym marzysz?", category_id: nil, confirmed: true},
+  {content: "O śnie.", category_id: nil, confirmed: true},
+  {content: "Nie chuchaj na mnie!", category_id: nil, confirmed: true},
+  {content: "Mam na Ciebie ochotę!", category_id: nil, confirmed: false},
+  {content: "Mam na Ciebie ochotę!", category_id: nil, confirmed: false},
+  {content: "Mam na Ciebie ochotę!", category_id: nil, confirmed: false},
+  {content: "Masz ładne oczy", category_id: nil, confirmed: false},
+  {content: "Masz ładne oczy", category_id: nil, confirmed: false},
+  {content: "Masz ładne kolanko", category_id: nil, confirmed: false},
+  {content: "Lubię twój głos", category_id: nil, confirmed: false}
+])
+QuestionInCard.create!([
+  {card_id: 75, question_id: 621},
+  {card_id: 75, question_id: 622},
+  {card_id: 75, question_id: 624},
+  {card_id: 75, question_id: 625},
+  {card_id: 75, question_id: 636},
+  {card_id: 75, question_id: 639},
+  {card_id: 75, question_id: 637},
+  {card_id: 75, question_id: 632},
+  {card_id: 75, question_id: 630},
+  {card_id: 75, question_id: 676},
+  {card_id: 76, question_id: 626},
+  {card_id: 76, question_id: 631},
+  {card_id: 76, question_id: 633},
+  {card_id: 76, question_id: 638},
+  {card_id: 76, question_id: 643},
+  {card_id: 76, question_id: 648},
+  {card_id: 76, question_id: 645},
+  {card_id: 76, question_id: 647},
+  {card_id: 76, question_id: 672},
+  {card_id: 76, question_id: 793},
+  {card_id: 77, question_id: 623},
+  {card_id: 77, question_id: 629},
+  {card_id: 77, question_id: 634},
+  {card_id: 77, question_id: 642},
+  {card_id: 77, question_id: 698},
+  {card_id: 77, question_id: 656},
+  {card_id: 77, question_id: 655},
+  {card_id: 77, question_id: 651},
+  {card_id: 77, question_id: 705},
+  {card_id: 77, question_id: 707},
+  {card_id: 78, question_id: 627},
+  {card_id: 78, question_id: 628},
+  {card_id: 78, question_id: 640},
+  {card_id: 78, question_id: 641},
+  {card_id: 78, question_id: 658},
+  {card_id: 78, question_id: 657},
+  {card_id: 78, question_id: 662},
+  {card_id: 78, question_id: 666},
+  {card_id: 78, question_id: 697},
+  {card_id: 78, question_id: 704},
+  {card_id: 79, question_id: 646},
+  {card_id: 79, question_id: 653},
+  {card_id: 79, question_id: 664},
+  {card_id: 79, question_id: 665},
+  {card_id: 79, question_id: 670},
+  {card_id: 79, question_id: 669},
+  {card_id: 79, question_id: 685},
+  {card_id: 79, question_id: 749},
+  {card_id: 79, question_id: 788},
+  {card_id: 79, question_id: 770},
+  {card_id: 80, question_id: 635},
+  {card_id: 80, question_id: 644},
+  {card_id: 80, question_id: 650},
+  {card_id: 80, question_id: 663},
+  {card_id: 80, question_id: 661},
+  {card_id: 80, question_id: 679},
+  {card_id: 80, question_id: 677},
+  {card_id: 80, question_id: 683},
+  {card_id: 80, question_id: 709},
+  {card_id: 80, question_id: 739},
+  {card_id: 81, question_id: 649},
+  {card_id: 81, question_id: 654},
+  {card_id: 81, question_id: 667},
+  {card_id: 81, question_id: 674},
+  {card_id: 81, question_id: 680},
+  {card_id: 81, question_id: 687},
+  {card_id: 81, question_id: 731},
+  {card_id: 81, question_id: 828},
+  {card_id: 81, question_id: 746},
+  {card_id: 81, question_id: 855},
+  {card_id: 82, question_id: 652},
+  {card_id: 82, question_id: 682},
+  {card_id: 82, question_id: 660},
+  {card_id: 82, question_id: 686},
+  {card_id: 82, question_id: 684},
+  {card_id: 82, question_id: 693},
+  {card_id: 82, question_id: 689},
+  {card_id: 82, question_id: 712},
+  {card_id: 82, question_id: 715},
+  {card_id: 82, question_id: 735},
+  {card_id: 83, question_id: 659},
+  {card_id: 83, question_id: 671},
+  {card_id: 83, question_id: 675},
+  {card_id: 83, question_id: 695},
+  {card_id: 83, question_id: 692},
+  {card_id: 83, question_id: 701},
+  {card_id: 83, question_id: 728},
+  {card_id: 83, question_id: 726},
+  {card_id: 83, question_id: 759},
+  {card_id: 83, question_id: 706},
+  {card_id: 84, question_id: 668},
+  {card_id: 84, question_id: 681},
+  {card_id: 84, question_id: 694},
+  {card_id: 84, question_id: 696},
+  {card_id: 84, question_id: 700},
+  {card_id: 84, question_id: 730},
+  {card_id: 84, question_id: 832},
+  {card_id: 84, question_id: 790},
+  {card_id: 84, question_id: 734},
+  {card_id: 84, question_id: 753},
+  {card_id: 85, question_id: 673},
+  {card_id: 85, question_id: 688},
+  {card_id: 85, question_id: 708},
+  {card_id: 85, question_id: 717},
+  {card_id: 85, question_id: 716},
+  {card_id: 85, question_id: 721},
+  {card_id: 85, question_id: 722},
+  {card_id: 85, question_id: 720},
+  {card_id: 85, question_id: 710},
+  {card_id: 85, question_id: 711},
+  {card_id: 86, question_id: 678},
+  {card_id: 86, question_id: 699},
+  {card_id: 86, question_id: 703},
+  {card_id: 86, question_id: 723},
+  {card_id: 86, question_id: 719},
+  {card_id: 86, question_id: 737},
+  {card_id: 86, question_id: 751},
+  {card_id: 86, question_id: 806},
+  {card_id: 86, question_id: 763},
+  {card_id: 86, question_id: 760},
+  {card_id: 87, question_id: 690},
+  {card_id: 87, question_id: 732},
+  {card_id: 87, question_id: 713},
+  {card_id: 87, question_id: 714},
+  {card_id: 87, question_id: 725},
+  {card_id: 87, question_id: 744},
+  {card_id: 87, question_id: 800},
+  {card_id: 87, question_id: 863},
+  {card_id: 87, question_id: 872},
+  {card_id: 87, question_id: 891},
+  {card_id: 88, question_id: 691},
+  {card_id: 88, question_id: 733},
+  {card_id: 88, question_id: 740},
+  {card_id: 88, question_id: 741},
+  {card_id: 88, question_id: 767},
+  {card_id: 88, question_id: 791},
+  {card_id: 88, question_id: 833},
+  {card_id: 88, question_id: 874},
+  {card_id: 88, question_id: 794},
+  {card_id: 88, question_id: 846},
+  {card_id: 89, question_id: 718},
+  {card_id: 89, question_id: 752},
+  {card_id: 89, question_id: 724},
+  {card_id: 89, question_id: 754},
+  {card_id: 89, question_id: 831},
+  {card_id: 89, question_id: 758},
+  {card_id: 89, question_id: 839},
+  {card_id: 89, question_id: 802},
+  {card_id: 89, question_id: 792},
+  {card_id: 89, question_id: 745},
+  {card_id: 90, question_id: 727},
+  {card_id: 90, question_id: 738},
+  {card_id: 90, question_id: 756},
+  {card_id: 90, question_id: 766},
+  {card_id: 90, question_id: 765},
+  {card_id: 90, question_id: 768},
+  {card_id: 90, question_id: 783},
+  {card_id: 90, question_id: 772},
+  {card_id: 90, question_id: 798},
+  {card_id: 90, question_id: 814},
+  {card_id: 91, question_id: 736},
+  {card_id: 91, question_id: 729},
+  {card_id: 91, question_id: 755},
+  {card_id: 91, question_id: 762},
+  {card_id: 91, question_id: 775},
+  {card_id: 91, question_id: 776},
+  {card_id: 91, question_id: 837},
+  {card_id: 91, question_id: 882},
+  {card_id: 91, question_id: 886},
+  {card_id: 91, question_id: 987},
+  {card_id: 92, question_id: 742},
+  {card_id: 92, question_id: 750},
+  {card_id: 92, question_id: 885},
+  {card_id: 92, question_id: 764},
+  {card_id: 92, question_id: 876},
+  {card_id: 92, question_id: 980},
+  {card_id: 92, question_id: 968},
+  {card_id: 92, question_id: 822},
+  {card_id: 92, question_id: 845},
+  {card_id: 92, question_id: 781},
+  {card_id: 93, question_id: 743},
+  {card_id: 93, question_id: 757},
+  {card_id: 93, question_id: 761},
+  {card_id: 93, question_id: 778},
+  {card_id: 93, question_id: 780},
+  {card_id: 93, question_id: 786},
+  {card_id: 93, question_id: 818},
+  {card_id: 93, question_id: 859},
+  {card_id: 93, question_id: 883},
+  {card_id: 93, question_id: 936},
+  {card_id: 94, question_id: 797},
+  {card_id: 94, question_id: 773},
+  {card_id: 94, question_id: 782},
+  {card_id: 94, question_id: 769},
+  {card_id: 94, question_id: 912},
+  {card_id: 94, question_id: 884},
+  {card_id: 94, question_id: 985},
+  {card_id: 94, question_id: 999},
+  {card_id: 94, question_id: 892},
+  {card_id: 94, question_id: 931},
+  {card_id: 95, question_id: 747},
+  {card_id: 95, question_id: 779},
+  {card_id: 95, question_id: 777},
+  {card_id: 95, question_id: 774},
+  {card_id: 95, question_id: 801},
+  {card_id: 95, question_id: 805},
+  {card_id: 95, question_id: 807},
+  {card_id: 95, question_id: 890},
+  {card_id: 95, question_id: 950},
+  {card_id: 95, question_id: 917},
+  {card_id: 96, question_id: 748},
+  {card_id: 96, question_id: 804},
+  {card_id: 96, question_id: 810},
+  {card_id: 96, question_id: 789},
+  {card_id: 96, question_id: 847},
+  {card_id: 96, question_id: 815},
+  {card_id: 96, question_id: 909},
+  {card_id: 96, question_id: 879},
+  {card_id: 96, question_id: 878},
+  {card_id: 96, question_id: 954},
+  {card_id: 97, question_id: 1139},
+  {card_id: 97, question_id: 771},
+  {card_id: 97, question_id: 796},
+  {card_id: 97, question_id: 811},
+  {card_id: 97, question_id: 816},
+  {card_id: 97, question_id: 820},
+  {card_id: 97, question_id: 896},
+  {card_id: 97, question_id: 918},
+  {card_id: 97, question_id: 914},
+  {card_id: 97, question_id: 895},
+  {card_id: 98, question_id: 702},
+  {card_id: 98, question_id: 785},
+  {card_id: 98, question_id: 795},
+  {card_id: 98, question_id: 829},
+  {card_id: 98, question_id: 835},
+  {card_id: 98, question_id: 922},
+  {card_id: 98, question_id: 906},
+  {card_id: 98, question_id: 926},
+  {card_id: 98, question_id: 967},
+  {card_id: 98, question_id: 970},
+  {card_id: 99, question_id: 825},
+  {card_id: 99, question_id: 808},
+  {card_id: 99, question_id: 809},
+  {card_id: 99, question_id: 813},
+  {card_id: 99, question_id: 803},
+  {card_id: 99, question_id: 830},
+  {card_id: 99, question_id: 827},
+  {card_id: 99, question_id: 821},
+  {card_id: 99, question_id: 817},
+  {card_id: 99, question_id: 865},
+  {card_id: 100, question_id: 849},
+  {card_id: 100, question_id: 862},
+  {card_id: 100, question_id: 826},
+  {card_id: 100, question_id: 843},
+  {card_id: 100, question_id: 916},
+  {card_id: 100, question_id: 908},
+  {card_id: 100, question_id: 850},
+  {card_id: 100, question_id: 969},
+  {card_id: 100, question_id: 844},
+  {card_id: 100, question_id: 945},
+  {card_id: 101, question_id: 851},
+  {card_id: 101, question_id: 853},
+  {card_id: 101, question_id: 856},
+  {card_id: 101, question_id: 858},
+  {card_id: 101, question_id: 875},
+  {card_id: 101, question_id: 957},
+  {card_id: 101, question_id: 924},
+  {card_id: 101, question_id: 982},
+  {card_id: 101, question_id: 981},
+  {card_id: 101, question_id: 956},
+  {card_id: 102, question_id: 784},
+  {card_id: 102, question_id: 799},
+  {card_id: 102, question_id: 819},
+  {card_id: 102, question_id: 868},
+  {card_id: 102, question_id: 962},
+  {card_id: 102, question_id: 861},
+  {card_id: 102, question_id: 854},
+  {card_id: 102, question_id: 848},
+  {card_id: 102, question_id: 838},
+  {card_id: 102, question_id: 834},
+  {card_id: 103, question_id: 787},
+  {card_id: 103, question_id: 812},
+  {card_id: 103, question_id: 852},
+  {card_id: 103, question_id: 857},
+  {card_id: 103, question_id: 965},
+  {card_id: 103, question_id: 955},
+  {card_id: 103, question_id: 977},
+  {card_id: 103, question_id: 1002},
+  {card_id: 103, question_id: 984},
+  {card_id: 103, question_id: 1047},
+  {card_id: 104, question_id: 823},
+  {card_id: 104, question_id: 824},
+  {card_id: 104, question_id: 836},
+  {card_id: 104, question_id: 842},
+  {card_id: 104, question_id: 864},
+  {card_id: 104, question_id: 887},
+  {card_id: 104, question_id: 881},
+  {card_id: 104, question_id: 873},
+  {card_id: 104, question_id: 869},
+  {card_id: 104, question_id: 866},
+  {card_id: 105, question_id: 1239},
+  {card_id: 105, question_id: 1126},
+  {card_id: 105, question_id: 897},
+  {card_id: 105, question_id: 877},
+  {card_id: 105, question_id: 867},
+  {card_id: 105, question_id: 902},
+  {card_id: 105, question_id: 894},
+  {card_id: 105, question_id: 871},
+  {card_id: 105, question_id: 979},
+  {card_id: 105, question_id: 983},
+  {card_id: 106, question_id: 840},
+  {card_id: 106, question_id: 841},
+  {card_id: 106, question_id: 860},
+  {card_id: 106, question_id: 870},
+  {card_id: 106, question_id: 880},
+  {card_id: 106, question_id: 888},
+  {card_id: 106, question_id: 889},
+  {card_id: 106, question_id: 893},
+  {card_id: 106, question_id: 899},
+  {card_id: 106, question_id: 901},
+  {card_id: 107, question_id: 900},
+  {card_id: 107, question_id: 903},
+  {card_id: 107, question_id: 904},
+  {card_id: 107, question_id: 939},
+  {card_id: 107, question_id: 1024},
+  {card_id: 107, question_id: 1127},
+  {card_id: 107, question_id: 1026},
+  {card_id: 107, question_id: 1022},
+  {card_id: 107, question_id: 911},
+  {card_id: 107, question_id: 1102},
+  {card_id: 108, question_id: 905},
+  {card_id: 108, question_id: 907},
+  {card_id: 108, question_id: 910},
+  {card_id: 108, question_id: 913},
+  {card_id: 108, question_id: 915},
+  {card_id: 108, question_id: 919},
+  {card_id: 108, question_id: 920},
+  {card_id: 108, question_id: 927},
+  {card_id: 108, question_id: 934},
+  {card_id: 108, question_id: 930},
+  {card_id: 109, question_id: 921},
+  {card_id: 109, question_id: 923},
+  {card_id: 109, question_id: 925},
+  {card_id: 109, question_id: 928},
+  {card_id: 109, question_id: 932},
+  {card_id: 109, question_id: 948},
+  {card_id: 109, question_id: 947},
+  {card_id: 109, question_id: 943},
+  {card_id: 109, question_id: 1023},
+  {card_id: 109, question_id: 938},
+  {card_id: 110, question_id: 929},
+  {card_id: 110, question_id: 933},
+  {card_id: 110, question_id: 935},
+  {card_id: 110, question_id: 937},
+  {card_id: 110, question_id: 940},
+  {card_id: 110, question_id: 964},
+  {card_id: 110, question_id: 963},
+  {card_id: 110, question_id: 959},
+  {card_id: 110, question_id: 952},
+  {card_id: 110, question_id: 960},
+  {card_id: 111, question_id: 941},
+  {card_id: 111, question_id: 944},
+  {card_id: 111, question_id: 953},
+  {card_id: 111, question_id: 975},
+  {card_id: 111, question_id: 971},
+  {card_id: 111, question_id: 988},
+  {card_id: 111, question_id: 1058},
+  {card_id: 111, question_id: 1001},
+  {card_id: 111, question_id: 1015},
+  {card_id: 111, question_id: 1120},
+  {card_id: 112, question_id: 942},
+  {card_id: 112, question_id: 946},
+  {card_id: 112, question_id: 949},
+  {card_id: 112, question_id: 951},
+  {card_id: 112, question_id: 958},
+  {card_id: 112, question_id: 966},
+  {card_id: 112, question_id: 961},
+  {card_id: 112, question_id: 974},
+  {card_id: 112, question_id: 994},
+  {card_id: 112, question_id: 990},
+  {card_id: 113, question_id: 976},
+  {card_id: 113, question_id: 972},
+  {card_id: 113, question_id: 973},
+  {card_id: 113, question_id: 978},
+  {card_id: 113, question_id: 986},
+  {card_id: 113, question_id: 1006},
+  {card_id: 113, question_id: 1005},
+  {card_id: 113, question_id: 1004},
+  {card_id: 113, question_id: 998},
+  {card_id: 113, question_id: 995},
+  {card_id: 114, question_id: 989},
+  {card_id: 114, question_id: 991},
+  {card_id: 114, question_id: 1000},
+  {card_id: 114, question_id: 1007},
+  {card_id: 114, question_id: 1012},
+  {card_id: 114, question_id: 1011},
+  {card_id: 114, question_id: 1032},
+  {card_id: 114, question_id: 1021},
+  {card_id: 114, question_id: 1048},
+  {card_id: 114, question_id: 1043},
+  {card_id: 115, question_id: 992},
+  {card_id: 115, question_id: 993},
+  {card_id: 115, question_id: 996},
+  {card_id: 115, question_id: 997},
+  {card_id: 115, question_id: 1003},
+  {card_id: 115, question_id: 1008},
+  {card_id: 115, question_id: 1018},
+  {card_id: 115, question_id: 1017},
+  {card_id: 115, question_id: 1028},
+  {card_id: 115, question_id: 1029},
+  {card_id: 116, question_id: 1009},
+  {card_id: 116, question_id: 1010},
+  {card_id: 116, question_id: 1014},
+  {card_id: 116, question_id: 1016},
+  {card_id: 116, question_id: 1019},
+  {card_id: 116, question_id: 1020},
+  {card_id: 116, question_id: 1027},
+  {card_id: 116, question_id: 1031},
+  {card_id: 116, question_id: 1035},
+  {card_id: 116, question_id: 1038},
+  {card_id: 117, question_id: 1030},
+  {card_id: 117, question_id: 1034},
+  {card_id: 117, question_id: 1036},
+  {card_id: 117, question_id: 1037},
+  {card_id: 117, question_id: 1040},
+  {card_id: 117, question_id: 1053},
+  {card_id: 117, question_id: 1052},
+  {card_id: 117, question_id: 1051},
+  {card_id: 117, question_id: 1050},
+  {card_id: 117, question_id: 1049},
+  {card_id: 118, question_id: 1042},
+  {card_id: 118, question_id: 1044},
+  {card_id: 118, question_id: 1045},
+  {card_id: 118, question_id: 1046},
+  {card_id: 118, question_id: 1054},
+  {card_id: 118, question_id: 1064},
+  {card_id: 118, question_id: 1063},
+  {card_id: 118, question_id: 1062},
+  {card_id: 118, question_id: 1060},
+  {card_id: 118, question_id: 1059},
+  {card_id: 119, question_id: 1013},
+  {card_id: 119, question_id: 1025},
+  {card_id: 119, question_id: 1033},
+  {card_id: 119, question_id: 1039},
+  {card_id: 119, question_id: 1041},
+  {card_id: 119, question_id: 1055},
+  {card_id: 119, question_id: 1056},
+  {card_id: 119, question_id: 1065},
+  {card_id: 119, question_id: 1061},
+  {card_id: 119, question_id: 1068},
+  {card_id: 120, question_id: 1057},
+  {card_id: 120, question_id: 1066},
+  {card_id: 120, question_id: 1067},
+  {card_id: 120, question_id: 1069},
+  {card_id: 120, question_id: 1070},
+  {card_id: 120, question_id: 1071},
+  {card_id: 120, question_id: 1073},
+  {card_id: 120, question_id: 1074},
+  {card_id: 120, question_id: 1075},
+  {card_id: 120, question_id: 1076},
+  {card_id: 121, question_id: 1078},
+  {card_id: 121, question_id: 1080},
+  {card_id: 121, question_id: 1079},
+  {card_id: 121, question_id: 1081},
+  {card_id: 121, question_id: 1082},
+  {card_id: 121, question_id: 1083},
+  {card_id: 121, question_id: 1084},
+  {card_id: 121, question_id: 1085},
+  {card_id: 121, question_id: 1086},
+  {card_id: 121, question_id: 1087},
+  {card_id: 122, question_id: 1072},
+  {card_id: 122, question_id: 1077},
+  {card_id: 122, question_id: 1088},
+  {card_id: 122, question_id: 1089},
+  {card_id: 122, question_id: 1090},
+  {card_id: 122, question_id: 1092},
+  {card_id: 122, question_id: 1097},
+  {card_id: 122, question_id: 1105},
+  {card_id: 122, question_id: 1104},
+  {card_id: 122, question_id: 1098},
+  {card_id: 123, question_id: 1091},
+  {card_id: 123, question_id: 1093},
+  {card_id: 123, question_id: 1094},
+  {card_id: 123, question_id: 1100},
+  {card_id: 123, question_id: 1109},
+  {card_id: 123, question_id: 1115},
+  {card_id: 123, question_id: 1112},
+  {card_id: 123, question_id: 1114},
+  {card_id: 123, question_id: 1106},
+  {card_id: 123, question_id: 1101},
+  {card_id: 124, question_id: 1108},
+  {card_id: 124, question_id: 1095},
+  {card_id: 124, question_id: 1103},
+  {card_id: 124, question_id: 1119},
+  {card_id: 124, question_id: 1121},
+  {card_id: 124, question_id: 1128},
+  {card_id: 124, question_id: 1124},
+  {card_id: 124, question_id: 1125},
+  {card_id: 124, question_id: 1111},
+  {card_id: 124, question_id: 1110},
+  {card_id: 125, question_id: 1096},
+  {card_id: 125, question_id: 1099},
+  {card_id: 125, question_id: 1107},
+  {card_id: 125, question_id: 1113},
+  {card_id: 125, question_id: 1116},
+  {card_id: 125, question_id: 1137},
+  {card_id: 125, question_id: 1136},
+  {card_id: 125, question_id: 1134},
+  {card_id: 125, question_id: 1130},
+  {card_id: 125, question_id: 1129},
+  {card_id: 126, question_id: 1117},
+  {card_id: 126, question_id: 1118},
+  {card_id: 126, question_id: 1122},
+  {card_id: 126, question_id: 1123},
+  {card_id: 126, question_id: 1131},
+  {card_id: 126, question_id: 1132},
+  {card_id: 126, question_id: 1138},
+  {card_id: 126, question_id: 1140},
+  {card_id: 126, question_id: 1141},
+  {card_id: 126, question_id: 1142},
+  {card_id: 127, question_id: 1133},
+  {card_id: 127, question_id: 1135},
+  {card_id: 127, question_id: 1143},
+  {card_id: 127, question_id: 1144},
+  {card_id: 127, question_id: 1145},
+  {card_id: 127, question_id: 1146},
+  {card_id: 127, question_id: 1147},
+  {card_id: 127, question_id: 1148},
+  {card_id: 127, question_id: 1149},
+  {card_id: 127, question_id: 1150},
+  {card_id: 128, question_id: 1151},
+  {card_id: 128, question_id: 1152},
+  {card_id: 128, question_id: 1153},
+  {card_id: 128, question_id: 1155},
+  {card_id: 128, question_id: 1157},
+  {card_id: 128, question_id: 1167},
+  {card_id: 128, question_id: 1165},
+  {card_id: 128, question_id: 1166},
+  {card_id: 128, question_id: 1160},
+  {card_id: 128, question_id: 1156},
+  {card_id: 129, question_id: 1154},
+  {card_id: 129, question_id: 1158},
+  {card_id: 129, question_id: 1159},
+  {card_id: 129, question_id: 1162},
+  {card_id: 129, question_id: 1163},
+  {card_id: 129, question_id: 1177},
+  {card_id: 129, question_id: 1178},
+  {card_id: 129, question_id: 1179},
+  {card_id: 129, question_id: 1174},
+  {card_id: 129, question_id: 1168},
+  {card_id: 130, question_id: 1161},
+  {card_id: 130, question_id: 1164},
+  {card_id: 130, question_id: 1169},
+  {card_id: 130, question_id: 1170},
+  {card_id: 130, question_id: 1173},
+  {card_id: 130, question_id: 1181},
+  {card_id: 130, question_id: 1186},
+  {card_id: 130, question_id: 1187},
+  {card_id: 130, question_id: 1188},
+  {card_id: 130, question_id: 1176},
+  {card_id: 131, question_id: 1171},
+  {card_id: 131, question_id: 1172},
+  {card_id: 131, question_id: 1175},
+  {card_id: 131, question_id: 1180},
+  {card_id: 131, question_id: 1183},
+  {card_id: 131, question_id: 1196},
+  {card_id: 131, question_id: 1195},
+  {card_id: 131, question_id: 1192},
+  {card_id: 131, question_id: 1189},
+  {card_id: 131, question_id: 1199},
+  {card_id: 132, question_id: 1182},
+  {card_id: 132, question_id: 1184},
+  {card_id: 132, question_id: 1185},
+  {card_id: 132, question_id: 1193},
+  {card_id: 132, question_id: 1194},
+  {card_id: 132, question_id: 1208},
+  {card_id: 132, question_id: 1206},
+  {card_id: 132, question_id: 1201},
+  {card_id: 132, question_id: 1197},
+  {card_id: 132, question_id: 1202},
+  {card_id: 134, question_id: 1204},
+  {card_id: 134, question_id: 1209},
+  {card_id: 134, question_id: 1211},
+  {card_id: 134, question_id: 1215},
+  {card_id: 134, question_id: 1216},
+  {card_id: 134, question_id: 1229},
+  {card_id: 134, question_id: 1226},
+  {card_id: 134, question_id: 1225},
+  {card_id: 134, question_id: 1224},
+  {card_id: 134, question_id: 1221},
+  {card_id: 135, question_id: 1205},
+  {card_id: 135, question_id: 1207},
+  {card_id: 135, question_id: 1210},
+  {card_id: 135, question_id: 1217},
+  {card_id: 135, question_id: 1220},
+  {card_id: 135, question_id: 1237},
+  {card_id: 135, question_id: 1236},
+  {card_id: 135, question_id: 1235},
+  {card_id: 135, question_id: 1231},
+  {card_id: 135, question_id: 1230}
+])
