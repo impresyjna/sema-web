@@ -1,7 +1,7 @@
 Category.create!([
-  {name: "Przyjacielskie"},
-  {name: "Erotyczne"},
-  {name: "Delikatny flirt"}
+  {name: "Przyjacielskie", id:1},
+  {name: "Erotyczne", id:2},
+  {name: "Delikatny flirt", id:3}
 ])
 
 Card.create!([
