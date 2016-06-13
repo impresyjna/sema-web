@@ -1,3 +1,8 @@
+Category.create!([
+                     {id: 1, name: "Przyjacielskie"},
+                     {id: 2, name: "Erotyczne"},
+                     {id: 3, name: "Delikatny flirt"}
+                 ])
 Card.create!([
   {id: 75, category_id: 1},
   {id: 76, category_id: 2},
@@ -60,11 +65,7 @@ Card.create!([
   {id: 134, category_id: 2},
   {id: 135, category_id: 1}
 ])
-Category.create!([
-  {id: 1, name: "Przyjacielskie"},
-  {id: 2, name: "Erotyczne"},
-  {id: 3, name: "Delikatny flirt"}
-])
+
 Question.create!([
   {id: 621, content: "Masz w sobie dziki magnetyzm!", category_id: nil, confirmed: true},
   {id: 622, content: "Co robisz?", category_id: nil, confirmed: true},
