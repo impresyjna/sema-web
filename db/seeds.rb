@@ -65,9 +65,6 @@ Category.create!([
   {id: 2, name: "Erotyczne"},
   {id: 3, name: "Delikatny flirt"}
 ])
-Friendship.create!([
-  {id: 1, user_id: 4, friend_id: "10", int: nil}
-])
 Question.create!([
   {id: 621, content: "Masz w sobie dziki magnetyzm!", category_id: nil, confirmed: true},
   {id: 622, content: "Co robisz?", category_id: nil, confirmed: true},
