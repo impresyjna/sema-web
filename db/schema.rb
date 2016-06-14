@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160613221956) do
+ActiveRecord::Schema.define(version: 20160614205837) do
 
   create_table "cards", force: :cascade do |t|
     t.datetime "created_at",            null: false
@@ -37,11 +37,25 @@ ActiveRecord::Schema.define(version: 20160613221956) do
 
   add_index "friendships", ["user_id"], name: "index_friendships_on_user_id", using: :btree
 
+  create_table "game_cards", force: :cascade do |t|
+    t.integer  "room_user_id",    limit: 4
+    t.integer  "card_id",         limit: 4
+    t.integer  "sent_who",        limit: 4
+    t.integer  "question_number", limit: 4
+    t.datetime "created_at",                               null: false
+    t.datetime "updated_at",                               null: false
+    t.boolean  "ready",           limit: 1, default: true
+  end
+
+  add_index "game_cards", ["card_id"], name: "index_game_cards_on_card_id", using: :btree
+  add_index "game_cards", ["room_user_id"], name: "index_game_cards_on_room_user_id", using: :btree
+
   create_table "question_in_cards", force: :cascade do |t|
     t.integer  "card_id",     limit: 4
     t.integer  "question_id", limit: 4
     t.datetime "created_at",            null: false
     t.datetime "updated_at",            null: false
+    t.integer  "number",      limit: 4
   end
 
   add_index "question_in_cards", ["card_id"], name: "index_question_in_cards_on_card_id", using: :btree
@@ -100,6 +114,8 @@ ActiveRecord::Schema.define(version: 20160613221956) do
 
   add_foreign_key "cards", "categories"
   add_foreign_key "friendships", "users"
+  add_foreign_key "game_cards", "cards"
+  add_foreign_key "game_cards", "room_users"
   add_foreign_key "question_in_cards", "cards"
   add_foreign_key "question_in_cards", "questions"
   add_foreign_key "questions", "categories"

@@ -18,7 +18,11 @@ Rails.application.routes.draw do
       resources :rooms, :only => [:index]
 
       #room_users
+      get 'join_room' => 'room_users#join_room'
       resources :room_users, :only => [:index]
+
+      #game_cards
+      resources :game_cards, :only => [:index]
 
       #sessions
       delete '/sessions/logout', to: 'sessions#destroy'

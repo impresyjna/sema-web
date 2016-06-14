@@ -3,12 +3,17 @@ class Api::V1::RoomUsersController < ApplicationController
   before_action :authenticate_with_token!, only: [:index]
 
   def index
-    user = current_user
     room = Room.find(params[:room][:id])
     users = room.room_users
-    RoomUser.where("user_id=? and room_id=?", current_user.id, room.id).destroy_all
-    room_user = room.room_users.create(user_id: current_user.id)
-    room_user.save
-    render json: users.where("user_id != ?", current_user.id), status: 200
+    render json: users, status: 200
+  end
+
+  def join_room
+    if (RoomUser.where("user_id=? and room_id=?", current_user.id, params[:room][:id]).blank?)
+      room_user = current_user.room_users.create(room_id: params[:room][:id])
+    else
+      room_user = RoomUser.where("user_id=? and room_id=?", current_user.id, params[:room][:id]).last
+    end
+    render json: room_user, status: 200
   end
 end
