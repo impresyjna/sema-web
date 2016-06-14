@@ -17,6 +17,9 @@ Rails.application.routes.draw do
       #rooms
       resources :rooms, :only => [:index]
 
+      #room_users
+      resources :room_users, :only => [:index]
+
       #sessions
       delete '/sessions/logout', to: 'sessions#destroy'
       post '/sessions/login', to: 'sessions#create'
