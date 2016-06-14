@@ -1,0 +1,39 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h2>Lista pokoi</h2>
+  </div>
+</div>
+<!-- /. ROW  -->
+<hr/>
+<!-- /. ROW  -->
+<div class="row text-center pad-top">
+  <div class="col-lg-12">
+    <div class="table-responsive">
+      <%= will_paginate @rooms, :previous_label => t("Poprzednie"), :next_label => t("Następne") %>
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Nazwa</th>
+          <th>Kategoria</th>
+          <th>Liczba graczy</th>
+          <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <%= render @rooms %>
+        </tbody>
+      </table>
+      <%= will_paginate @rooms, :previous_label => t("Poprzednie"), :next_label => t("Następne") %>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <%= link_to "Dodaj nowy pokój", new_room_path, :class => "btn btn-danger btn-lg btn-block" %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+

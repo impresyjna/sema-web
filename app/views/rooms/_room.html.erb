@@ -1,0 +1,14 @@
+<tr>
+  <td><%= room.name %></td>
+  <td>
+    <%= room.category.name %>
+  </td>
+  <td>
+    <%= room.room_users.count %>
+  </td>
+  <td class="table_buttons">
+    <%= link_to "<i class='fa fa-eye fa-2x'></i>".html_safe, room %>
+    <%= link_to "<i class='fa fa-pencil fa-2x'></i>".html_safe, edit_room_path(room) %>
+    <%= link_to "<i class='fa fa-trash fa-2x'></i>".html_safe, room, method: :delete %>
+  </td>
+</tr>

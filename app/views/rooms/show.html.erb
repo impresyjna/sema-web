@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h2>Lista użytkowników</h2>
+  </div>
+</div>
+<!-- /. ROW  -->
+<hr/>
+<!-- /. ROW  -->
+<div class="row text-center pad-top">
+  <div class="col-lg-12">
+    <div class="table-responsive">
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>Login</th>
+          <th>Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <% @users.each do |user| %>
+            <%= render 'rooms/room_user', room_user: user %>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+
+
