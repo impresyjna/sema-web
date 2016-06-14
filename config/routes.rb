@@ -14,6 +14,9 @@ Rails.application.routes.draw do
       #friendship
       resources :friendships, :only => [:index, :create, :destroy]
 
+      #rooms
+      resources :rooms, :only => [:index]
+
       #sessions
       delete '/sessions/logout', to: 'sessions#destroy'
       post '/sessions/login', to: 'sessions#create'
