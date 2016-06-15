@@ -22,7 +22,8 @@ Rails.application.routes.draw do
       resources :room_users, :only => [:index]
 
       #game_cards
-      resources :game_cards, :only => [:index]
+      get 'unreceived_cards' => 'game_cards#unreceived_cards'
+      resources :game_cards, :only => [:index, :update]
 
       #categories
       resources :categories, :only => [:index]

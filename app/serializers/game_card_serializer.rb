@@ -3,7 +3,7 @@ class GameCardSerializer < ActiveModel::Serializer
 
   def sender_login
     if (!object.sent_who.blank?)
-      User.find(RoomUser.find(object.sent_who).id).login
+      RoomUser.find(object.sent_who).user.login
     end
   end
 

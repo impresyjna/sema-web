@@ -1,7 +1,7 @@
 class QuestionInCardSerializer < ActiveModel::Serializer
-  attributes :number, :question
+  attributes :number, :question_content
 
-  def question
+  def question_content
     object.question.content
   end
 end
