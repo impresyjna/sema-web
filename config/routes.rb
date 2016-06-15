@@ -24,6 +24,9 @@ Rails.application.routes.draw do
       #game_cards
       resources :game_cards, :only => [:index]
 
+      #categories
+      resources :categories, :only => [:index]
+
       #sessions
       delete '/sessions/logout', to: 'sessions#destroy'
       post '/sessions/login', to: 'sessions#create'
