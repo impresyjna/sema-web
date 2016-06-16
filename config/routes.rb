@@ -15,10 +15,11 @@ Rails.application.routes.draw do
       resources :friendships, :only => [:index, :create, :destroy]
 
       #rooms
-      resources :rooms, :only => [:index]
+      resources :rooms, :only => [:index, :create]
 
       #room_users
       get 'join_room' => 'room_users#join_room'
+      delete 'leave_room' => 'room_users#destroy'
       resources :room_users, :only => [:index]
 
       #game_cards
